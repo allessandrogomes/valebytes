@@ -15,11 +15,16 @@ module.exports = {
         'work': "url('/images/work.jpg')",
         'round': "url('/images/round.png')",
         'fill': "url('/images/fill.png')",
-        'waves': "url('/images/waves.png')"
+        'waves': "url('/images/waves.png')",
+        'group101': "url('/images/group101.png')"
       },
       colors: {
         'primary': "#213D99",
-        'secondary': "#161C2D"
+        'secondary': "#161C2D",
+        'tertiary': "#F4F7FA"
+      },
+      screens: {
+        'max-580': { 'max': '580px' }
       }
     },
   },
