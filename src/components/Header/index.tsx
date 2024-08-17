@@ -7,6 +7,8 @@ import { IoMdMenu } from "react-icons/io";
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import StartButton from '../StartButton';
+import Link from 'next/link';
+import { FaWhatsapp } from "react-icons/fa";
 
 interface Props {
     /**
@@ -34,13 +36,26 @@ export default function Header(props: Props) {
             <Divider />
             <nav className="flex justify-center w-full mt-1.5">
                 <ul className="flex flex-col gap-10 text-xl">
-                    <li><a className="text-secondary cursor-pointer">Demos</a></li>
-                    <li><a className="text-secondary cursor-pointer">Pages</a></li>
-                    <li><a className="text-secondary cursor-pointer">Support</a></li>
-                    <li><a className="text-secondary cursor-pointer">Contact</a></li>
+                    <li>
+                        <Link href="/" className="text-secondary cursor-pointer">Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/about" className="text-secondary cursor-pointer">Sobre</Link>
+                    </li>
+                    <li>
+                        <Link href="/services" className="text-secondary cursor-pointer">Serviços</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact" className="text-secondary cursor-pointer">Contato</Link>
+                    </li>
                 </ul>
             </nav>
-            <StartButton />
+            <Box sx={{ display: { xs: 'flex', lg: 'none' }, gap: "50px", alignItems: "center", color: "#2DD36B", flexDirection: "column" }}>
+                <StartButton />
+                <Link target='_blank' href="https://www.google.com/">
+                    <FaWhatsapp size={35} />
+                </Link>
+            </Box>
         </Box>
     );
 
@@ -69,16 +84,27 @@ export default function Header(props: Props) {
                     <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         <nav className="flex justify-between w-[333px] mt-1.5">
                             <ul className="flex gap-10">
-                                <li><a className="text-secondary cursor-pointer">Demos</a></li>
-                                <li><a className="text-secondary cursor-pointer">Pages</a></li>
-                                <li><a className="text-secondary cursor-pointer">Support</a></li>
-                                <li><a className="text-secondary cursor-pointer">Contact</a></li>
+                                <li>
+                                    <Link href="/" className="text-secondary cursor-pointer">Home</Link>
+                                </li>
+                                <li>
+                                    <Link href="/about" className="text-secondary cursor-pointer">Sobre</Link>
+                                </li>
+                                <li>
+                                    <Link href="/services" className="text-secondary cursor-pointer">Serviços</Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact" className="text-secondary cursor-pointer">Contato</Link>
+                                </li>
                             </ul>
                         </nav>
                     </Box>
                 </div>
-                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: "center", color: "#2DD36B" }}>
                     <StartButton />
+                    <Link target='_blank' href="https://www.google.com/">
+                        <FaWhatsapp style={{ position: "relative", left: "30px" }} size={35} />
+                    </Link>
                 </Box>
             </div>
             <nav>

@@ -11,7 +11,6 @@ export default function Home() {
             <OurServicesSection />
             <WhyChooseUsSection />
             <CaseStudiesSection />
-            <Footer />
         </div>
     )
 }

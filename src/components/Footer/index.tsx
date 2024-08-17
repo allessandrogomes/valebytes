@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className="bg-[#c0c0c0] w-full min-h-[400px] h-full flex flex-col items-center pt-[50px]">
             <ReadyToLaunchSection />
-            <div className="flex flex-col mt-[130px] items-center gap-4">
+            <div className="flex flex-col mt-[130px] items-center gap-4 pb-4">
                 <Image src="/images/logo-1.png" width={140} height={80} alt="Logo ValeBytes" />
                 <div>
                     <ul className="flex gap-4 text-primary text-xl">
@@ -15,6 +15,7 @@ export default function Footer() {
                         <li><a><FiLinkedin /></a></li>
                     </ul>
                 </div>
+                <h4>Juazeiro - BA / Petrolina - PE</h4>
                 <h4>Todos os direitos reservados à ValeBytes - 2024 &copy;</h4>
             </div>
         </footer>

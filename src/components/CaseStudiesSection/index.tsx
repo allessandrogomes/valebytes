@@ -4,35 +4,36 @@ import CardCaseStudies from "./CardCaseStudies";
 
 export default function CaseStudiesSection() {
     return (
-        <section className="flex flex-col items-center gap-[100px] w-full max-580:w-[80%]">
-            <TitleSubtitle title="Case Studies" subtitle="Our works describe why we are the best in the business" />
+        <section className="flex flex-col items-center gap-[100px] w-full max-580:w-[80%] mb-[100px]">
+            <TitleSubtitle title="Principais projetos" subtitle="Nossos trabalhos descrevem porque somos os melhores no ramo" />
             <div className="flex flex-wrap justify-center gap-[50px] w-[80%]">
                 <CardCaseStudies
                     height={500}
-                    image="/images/aura-bg.png"
-                    title="Graphic Design"
-                    subtitle="Aura Branding Design"
+                    image="/images/psicologia.png"
+                    title="Desenvolvimento Web"
+                    subtitle="Página Institucional"
                 />
                 <CardCaseStudies
                     height={300}
-                    image="/images/snack.png"
-                    title="AB.S Snack Packaging"
-                    subtitle="Aura Branding Design"
+                    image="/images/erp.png"
+                    title="Desenvolvimento de Software"
+                    subtitle="Sistema de Gestão Empresarial"
                 />
                 <CardCaseStudies
                     height={300}
-                    image="/images/gradient-website.png"
-                    title="Web Development"
-                    subtitle="Gradient Website Development"
+                    image="/images/landing-page.png"
+                    title="Desenvolvimento Web"
+                    subtitle="Landing Page"
                 />
                 <CardCaseStudies
                     height={500}
-                    image="/images/magazine-content.png"
-                    title="Content Writing"
-                    subtitle="Magazine Content Writing"
+                    image="/images/mobile-web.jpg"
+                    title="Desenvolvimento Web"
+                    subtitle="Cardápio Mobile Online"
+                    bgPositionX={-60}
                 />
             </div>
-            <button className="text-xl text-primary flex gap-4 items-center font-bold">See all works <FaArrowRight /></button>
+            {/* <button className="text-xl text-primary flex gap-4 items-center font-bold">See all works <FaArrowRight /></button> */}
         </section>
     )
 }
