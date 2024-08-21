@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function AboutSection() {
     return (
-        <section className="flex flex-col items-center justify-center w-full max-w-full bg-about bg-auto mb-[200px] pt-[100px] xl:pt-[8%] text-justify lg:text-start px-6 sm:px-0" id="sobre">
+        <section className="flex flex-col items-center justify-center w-full max-w-full bg-about bg-auto bg-no-repeat mb-[200px] pt-[100px] xl:pt-[8%] text-justify lg:text-start px-6 sm:px-0" id="sobre">
             <h2 className="font-semibold mb-4 text-2xl xl:mb-0 xl:text-6xl">Sobre Nós</h2>
             <div className="flex justify-center items-center gap-[50px] w-full max-w-full">
                 <Image className="hidden xl:block" src="/images/about-2.webp" width={500} height={500} alt="Imagem Sobre a ValeBytes" />

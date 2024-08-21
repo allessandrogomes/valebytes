@@ -1,6 +1,6 @@
 export default function ContactSection() {
     return (
-        <section className="flex flex-wrap items-center justify-center gap-[50px] w-full max-w-full bg-contact bg-auto bg-no-repeat pb-[200px] pt-[100px] xl:pt-[9%] px-6 xl:px-0" id="contato">
+        <section className="flex flex-wrap items-center justify-center gap-[50px] w-full max-w-full bg-contact bg-cover bg-no-repeat pb-[200px] pt-[100px] xl:pt-[9%] px-6 xl:px-0" id="contato">
             <div className="max-w-[500px]">
                 <h2 className="capitalize font-semibold text-2xl sm:text-4xl md:text-6xl mb-4">Vamos discutir<br /> seu projeto</h2>
                 <h3 className="text-sm sm:text-base">Preencha o formulário ao lado com suas informações e uma breve descrição do seu projeto. Entraremos em contato para discutir como podemos ajudar.</h3>
