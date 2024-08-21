@@ -1,16 +1,17 @@
-import CaseStudiesSection from "@/components/CaseStudiesSection"
-import Footer from "@/components/Footer"
+import AboutSection from "@/components/AboutSection"
+import ContactSection from "@/components/ContactSection"
+import DifferencesSection from "@/components/DifferencesSection"
 import IntroSection from "@/components/IntroSection"
-import OurServicesSection from "@/components/OurServicesSection"
-import WhyChooseUsSection from "@/components/WhyChooseUsSection"
+import ProjectsSection from "@/components/ProjectsSection"
 
 export default function Home() {
     return (
-        <div className="flex flex-col items-center gap-[100px]">
+        <div className="flex max-w-full flex-col items-center">
             <IntroSection />
-            <OurServicesSection />
-            <WhyChooseUsSection />
-            <CaseStudiesSection />
+            <ProjectsSection />
+            <DifferencesSection />
+            <AboutSection />
+            <ContactSection />
         </div>
     )
 }

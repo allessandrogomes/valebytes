@@ -1,22 +1,17 @@
-import StartButton from "../StartButton";
+import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules'
+import { Swiper, SwiperSlide } from "swiper/react"
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import Image from 'next/image'
 
 export default function IntroSection() {
     return (
-        <section className="flex justify-center bg-home bg-cover w-full h-[700px]">
-            <div className="flex items-center justify-around w-full h-[550px] mt-[130px] max-580:w-[80%]">
-                <div className="flex flex-col gap-6 w-[420px]">
-                    <h3 className="uppercase text-primary font-bold">Vamos mudar o seu negócio</h3>
-                    <h2 className="text-6xl font-bold text-secondary">Eleve sua empresa a um novo patamar</h2>
-                    <p className="text-xl text-secondary opacity-80">Na ValeBytes, usamos tecnologia de ponta para transformar desafios em oportunidades. Inove e descubra o potencial ilimitado da sua empresa com nossas soluções personalizadas.</p>
-                    <StartButton />
-                </div>
-                <div className="w-[520px] h-[500px] relative hidden lg:block">
-                    <div className="bg-fill w-[107px] h-[107px] left-[110px] absolute"></div>
-                    <div className="bg-work bg-cover w-[460px] h-[460px] rounded-full absolute top-[20px] right-[20px]"></div>
-                    <div className="bg-round bg-no-repeat bg-contain w-[125px] h-[125px] absolute bottom-[20px] left-[60px]"></div>
-                    <div className="bg-waves w-[25px] h-[79px] absolute bottom-[70px] right-[50px]"></div>
-                </div>
+        <section className="flex justify-start w-full max-w-full h-full mb-[50px] pt-[120px] px-[50px] lg:pt-[16%] xl:justify-around" id="inicio">
+            <div className="max-w-[792px] text-center md:text-start md:ml-[50px] xl:ml-0">
+                <h1 className="leading-[40px] text-[2rem] capitalize font-semibold md:leading-[90px] md:text-[4.5rem]"><span className="text-tertiary">Código Personalizado</span>,<br/> Sem Genéricos</h1>
+                <h2 className="mt-6 text-[1.25rem] md:text-[1.5rem]">Soluções Exclusivas com Código Personalizado:<br/>Levantamento Rigoroso, Alta Performance, Tecnologia de Ponta e SEO Otimizado</h2>
             </div>
+            <Image className="hidden relative bottom-[70px] xl:block" src="/images/intro.webp" width={500} height={200} alt="Imagem Início"/>
         </section>
     )
 } 
