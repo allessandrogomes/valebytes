@@ -7,19 +7,19 @@ import { IoMdMenu } from "react-icons/io";
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import StartButton from '../StartButton';
-import Link from 'next/link';
+import { Link } from 'react-scroll'
 import { FaWhatsapp } from "react-icons/fa";
 
 interface Props {
-    window?: () => Window;
+    windowContainer?: () => Window;
 }
 
 const drawerWidth = 240;
 
 export default function Header(props: Props) {
 
-    const { window } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { windowContainer } = props;
+    const [mobileOpen, setMobileOpen] = React.useState(false)
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -34,35 +34,35 @@ export default function Header(props: Props) {
             <nav className="flex justify-center w-full mt-1.5">
                 <ul className="flex flex-col gap-10 text-base font-medium">
                     <li>
-                        <Link href="#inicio" className="text-secondary cursor-pointer">Início</Link>
+                        <Link to="inicio" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
                     </li>
                     <li>
-                        <Link href="#projetos" className="text-secondary cursor-pointer">Projetos</Link>
+                        <Link to="projetos" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
                     </li>
                     <li>
-                        <Link href="#diferenciais" className="text-secondary cursor-pointer">Diferenciais</Link>
+                        <Link to="diferenciais" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
                     </li>
                     <li>
-                        <Link href="#sobre" className="text-secondary cursor-pointer">Sobre</Link>
+                        <Link to="sobre" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
                     </li>
                     <li>
-                        <Link href="#contato" className="text-secondary cursor-pointer">Contato</Link>
+                        <Link to="contato" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
                     </li>
                 </ul>
             </nav>
-            <Box sx={{ display: { xs: 'flex', lg: 'none' }, gap: "50px", alignItems: "center", color: "#2DD36B", flexDirection: "column" }}>
+            <Box sx={{ display: { xs: 'flex', lg: 'none' }, gap: "50px", alignItems: "center", color: "#FFFFFF", flexDirection: "column" }}>
                 <StartButton />
-                <Link target='_blank' href="https://www.google.com/">
-                    <FaWhatsapp size={35} />
-                </Link>
+                <a target='_blank' href="https://www.google.com/">
+                    <FaWhatsapp style={{ position: "relative", left: "30px", color: "#2DD36B" }} size={35} />
+                </a>
             </Box>
         </Box>
     );
 
-    const container = window !== undefined ? () => window().document.body : undefined;
+    const container = windowContainer !== undefined ? () => windowContainer().document.body : undefined;
 
     return (
-        <header className="fixed z-[999] flex w-full h-[80px] justify-center mb-[150px] bg-[#00284b]">
+        <header className="fixed z-[999] flex w-full h-[80px] justify-center mb-[150px]">
             <div className="flex justify-evenly items-center w-full text-xl font-medium">
                 <IconButton
                     color="inherit"
@@ -82,30 +82,30 @@ export default function Header(props: Props) {
                 </Typography>
                 <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                     <nav className="flex w-full mt-1.5">
-                        <ul className="flex gap-10 text-base font-medium">
+                        <ul className="flex gap-10 text-base font-medium list-no-mobile">
                             <li>
-                                <Link href="#inicio" className="text-secondary cursor-pointer">Início</Link>
+                                <Link to="inicio" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
                             </li>
                             <li>
-                                <Link href="#projetos" className="text-secondary cursor-pointer">Projetos</Link>
+                                <Link to="projetos" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
                             </li>
                             <li>
-                                <Link href="#diferenciais" className="text-secondary cursor-pointer">Diferenciais</Link>
+                                <Link to="diferenciais" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
                             </li>
                             <li>
-                                <Link href="#sobre" className="text-secondary cursor-pointer">Sobre</Link>
+                                <Link to="sobre" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
                             </li>
                             <li>
-                                <Link href="#contato" className="text-secondary cursor-pointer">Contato</Link>
+                                <Link to="contato" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
                             </li>
                         </ul>
                     </nav>
                 </Box>
-                <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: "center", color: "#2DD36B" }}>
+                <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: "center", color: "#FFFFFF" }}>
                     <StartButton />
-                    <Link target='_blank' href="https://www.google.com/">
-                        <FaWhatsapp style={{ position: "relative", left: "30px" }} size={35} />
-                    </Link>
+                    <a target='_blank' href="https://www.google.com/">
+                        <FaWhatsapp style={{ position: "relative", left: "30px", color: "#2DD36B" }} size={35} />
+                    </a>
                 </Box>
             </div>
             <nav>

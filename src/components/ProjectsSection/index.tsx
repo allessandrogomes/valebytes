@@ -6,9 +6,9 @@ import Image from 'next/image'
 
 export default function ProjectsSection() {
     return (
-        <section className="w-full max-w-full overflow-x-hidden mb-[200px] pt-[100px] md:pt-[13%]" id="projetos">
+        <section className="w-full max-w-full overflow-x-hidden mb-[150px] md:mb-[250px]" id="projetos">
             <div className="w-full max-w-full flex flex-col items-center gap-[50px]">
-                <h2 className="text-center text-xl mb-4 font-medium px-[30px] xl:px-0 md:text-4xl">Conheça alguns dos <span className="text-tertiary font-semibold">Projetos</span> desenvolvidos pela <span className="text-tertiary font-semibold">ValeBytes</span></h2>
+                <h2 className="text-center mb-4 font-medium px-[30px] xl:px-0 text-3xl sm:text-4xl md:text-5xl">Conheça alguns dos <span className="text-color3 font-semibold">Projetos</span> desenvolvidos pela <span className="text-color3 font-semibold">ValeBytes</span></h2>
                 <div id="projects-swiper" className="hidden -mx-[50px] sm:block">
                     <Swiper
                         modules={[Autoplay, A11y, EffectCoverflow]}

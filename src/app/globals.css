@@ -59,3 +59,22 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+header {
+    background: rgb(15,34,97);
+background: linear-gradient(180deg, rgba(15,34,97,1) 0%, rgba(2,21,38,1) 100%);
+}
+
+li {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+}
+
+.list-no-mobile li:hover {
+    border-bottom-color: #FFFFFF;
+}
+
+li .active {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #FFFFFF;
+}

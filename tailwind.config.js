@@ -16,9 +16,11 @@ module.exports = {
         'contact': "url('/images/lines-3.webp')"
       },
       colors: {
-        'primary': "#213D99",
-        'secondary': "#FFFFFF",
-        'tertiary': "#3D60D6"
+        'color1': "#3D60D6",
+        'color2': "#FFFFFF",
+        'color3': "#3D60D6",
+        'color4': "#021526",
+        'color5': "#FAFAFA"
       }
     },
   },

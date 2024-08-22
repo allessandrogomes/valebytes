@@ -1,7 +1,16 @@
+import { Link } from "react-scroll"
+
 export default function StartButton() {
     return (
-        <button className="bg-[#3D60D6] text-white p-2 rounded-lg mt-1.5 w-[180px] h-[45px] text-[1.125rem] font-medium">
+        <Link
+            to="contato"
+            spy
+            smooth
+            offset={-100}
+            duration={50}
+            className="bg-color1 py-2 px-4 rounded-lg text-two text-base font-medium cursor-pointer"
+        >
             Iniciar Projeto
-        </button>
+        </Link>
     )
 }
