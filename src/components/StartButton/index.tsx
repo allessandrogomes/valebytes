@@ -5,6 +5,8 @@ import { Link } from "react-scroll"
 export default function StartButton() {
     return (
         <Link
+            role="button"
+            aria-label="Scroll to respective Section"
             to="contato"
             spy
             smooth

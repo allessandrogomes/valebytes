@@ -36,19 +36,19 @@ export default function Header(props: Props) {
             <nav className="flex justify-center w-full mt-1.5">
                 <ul className="flex flex-col gap-10 text-base font-medium">
                     <li>
-                        <Link to="inicio" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
+                        <Link to="inicio" role="button" aria-label="Scroll to respective Section" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
                     </li>
                     <li>
-                        <Link to="projetos" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
+                        <Link to="projetos" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
                     </li>
                     <li>
-                        <Link to="diferenciais" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
+                        <Link to="diferenciais" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
                     </li>
                     <li>
-                        <Link to="sobre" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
+                        <Link to="sobre" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
                     </li>
                     <li>
-                        <Link to="contato" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
+                        <Link to="contato" role="button" aria-label="Scroll to respective Section" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
                     </li>
                 </ul>
             </nav>
@@ -86,19 +86,19 @@ export default function Header(props: Props) {
                     <nav className="flex w-full mt-1.5">
                         <ul className="flex gap-10 text-base font-medium list-no-mobile">
                             <li>
-                                <Link to="inicio" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
+                                <Link to="inicio" role="button" aria-label="Scroll to respective Section" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
                             </li>
                             <li>
-                                <Link to="projetos" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
+                                <Link to="projetos" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
                             </li>
                             <li>
-                                <Link to="diferenciais" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
+                                <Link to="diferenciais" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
                             </li>
                             <li>
-                                <Link to="sobre" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
+                                <Link to="sobre" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
                             </li>
                             <li>
-                                <Link to="contato" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
+                                <Link to="contato" role="button" aria-label="Scroll to respective Section" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
                             </li>
                         </ul>
                     </nav>
