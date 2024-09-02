@@ -8,6 +8,7 @@
         src: url('/fonts/clash-display/ClashDisplay-Extralight.woff2');
         font-weight: 200;
         font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -15,6 +16,7 @@
         src: url('/fonts/clash-display/ClashDisplay-Light.woff2');
         font-weight: 300;
         font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -22,6 +24,7 @@
         src: url('/fonts/clash-display/ClashDisplay-Regular.woff2');
         font-weight: 400;
         font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -29,6 +32,7 @@
         src: url('/fonts/clash-display/ClashDisplay-Medium.woff2');
         font-weight: 500;
         font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -36,6 +40,7 @@
         src: url('/fonts/clash-display/ClashDisplay-Semibold.woff2');
         font-weight: 600;
         font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -43,11 +48,12 @@
         src: url('/fonts/clash-display/ClashDisplay-Bold.woff2');
         font-weight: 700;
         font-style: normal;
+        font-display: swap;
     }
 }
 
 body {
-    font-family: 'Clash Display', 'Roboto';
+    font-family: 'Clash Display', sans-serif;
     background-color: #021526;
     color: #FFFFFF;
 }
@@ -61,8 +67,8 @@ html {
 }
 
 header {
-    background: rgb(15,34,97);
-background: linear-gradient(180deg, rgba(15,34,97,1) 0%, rgba(2,21,38,1) 100%);
+    background: rgb(15, 34, 97);
+    background: linear-gradient(180deg, rgba(15, 34, 97, 1) 0%, rgba(2, 21, 38, 1) 100%);
 }
 
 li {
