@@ -1,3 +1,5 @@
+'use client'
+
 import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css'
