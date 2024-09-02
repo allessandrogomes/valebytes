@@ -21,11 +21,11 @@ export default function ProjectsSection() {
                         autoplay={{ delay: 2000 }}
                     >
                         <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
+                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
                         <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
+                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
                         <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
+                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
                     </Swiper>
                 </div>
                 <div className="w-full sm:hidden">
@@ -37,12 +37,12 @@ export default function ProjectsSection() {
                         speed={900}
                         autoplay={{ delay: 2000 }}
                     >
-                        <SwiperSlide><Image width={700} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={700} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={700} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={700} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={700} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={700} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
+                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
+                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
+                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
+                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
+                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
+                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
