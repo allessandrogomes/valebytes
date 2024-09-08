@@ -55,7 +55,7 @@ export default function Header(props: Props) {
             <Box sx={{ display: { xs: 'flex', lg: 'none' }, gap: "50px", alignItems: "center", color: "#FFFFFF", flexDirection: "column" }}>
                 <StartButton />
                 <a target='_blank' href="https://www.google.com/">
-                    <FaWhatsapp style={{ position: "relative", left: "30px", color: "#2DD36B" }} size={35} />
+                    <FaWhatsapp style={{ color: "#2DD36B" }} size={35} />
                 </a>
             </Box>
         </Box>
