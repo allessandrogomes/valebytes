@@ -14,20 +14,21 @@ export default function ProjectsSection() {
                 <div id="projects-swiper" className="hidden -mx-[50px] sm:block">
                     <Swiper
                         modules={[Autoplay, A11y, EffectCoverflow]}
-                        slidesPerView={3}
+                        slidesPerView={2}
                         loop
                         spaceBetween={30}
-                        centeredSlides={true}
+                        centeredSlides
                         effect='coverflow'
                         speed={900}
                         autoplay={{ delay: 2000 }}
+                        grabCursor
                     >
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={847} src="/images/psicho.png" alt="Banner Psicho" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/raylaw.png" alt="Banner Raylaw" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/solrenova-1.png" alt="Banner SolRenova" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/psicho-1.png" alt="Banner SolRenova" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/raylaw-1.png" alt="Banner SolRenova" /></SwiperSlide>
                     </Swiper>
                 </div>
                 <div className="w-full sm:hidden">
@@ -39,12 +40,12 @@ export default function ProjectsSection() {
                         speed={900}
                         autoplay={{ delay: 2000 }}
                     >
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
-                        <SwiperSlide><Image width={600} height={0} src="/images/energia-solar-banner.webp" alt="Banner" /></SwiperSlide>
-                        <SwiperSlide><Image width={800} height={600} src="/images/solrenova.webp" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={847} src="/images/psicho.png" alt="Banner Psicho" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/raylaw.png" alt="Banner Raylaw" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/solrenova-1.png" alt="Banner SolRenova" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/psicho-1.png" alt="Banner SolRenova" /></SwiperSlide>
+                        <SwiperSlide><Image width={1599} height={850} src="/images/raylaw-1.png" alt="Banner SolRenova" /></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
