@@ -28,10 +28,10 @@ export default function Header(props: Props) {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', gap: '10px', backgroundColor: '#00284b', height: '100%', py: '20px' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                <Image src="/images/valebytes-logo-white.webp" width={120} height={45} alt="Logo ValeBytes" />
-            </Typography>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', gap: '10px', backgroundColor: '#021526', height: '100%', py: '20px' }}>
+            <Box sx={{ width: "170px" }}>
+                <Image src="/images/valebytes-logo-transparent.png" width={582} height={126} alt="Logo ValeBytes" />
+            </Box>
             <Divider />
             <nav className="flex justify-center w-full mt-1.5">
                 <ul className="flex flex-col gap-10 text-base font-medium">
@@ -78,9 +78,9 @@ export default function Header(props: Props) {
                 <Typography
                     variant="h6"
                     component="div"
-                    sx={{ display: 'block', width: '120px' }}
+                    sx={{ display: 'block', width: '160px' }}
                 >
-                    <Image src="/images/valebytes-logo-white.webp" width={120} height={45} alt="Logo ValeBytes" />
+                    <Image src="/images/valebytes-logo-transparent.png" width={582} height={126} alt="Logo ValeBytes" />
                 </Typography>
                 <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                     <nav className="flex w-full mt-1.5">
