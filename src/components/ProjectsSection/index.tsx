@@ -1,9 +1,10 @@
 'use client'
 
-import { A11y, Autoplay, EffectCoverflow } from 'swiper/modules'
+import { A11y, Autoplay, EffectCoverflow, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
 import Image from 'next/image'
 
 export default function ProjectsSection() {
@@ -33,19 +34,20 @@ export default function ProjectsSection() {
                 </div>
                 <div className="w-full sm:hidden">
                     <Swiper
-                        modules={[Autoplay, A11y]}
+                        modules={[Autoplay, A11y, Pagination]}
                         slidesPerView={1}
                         loop
                         centeredSlides={true}
+                        pagination
                         speed={900}
                         autoplay={{ delay: 2000 }}
                     >
-                        <SwiperSlide><Image width={1599} height={847} src="/images/psicho.png" alt="Banner Psicho" /></SwiperSlide>
-                        <SwiperSlide><Image width={1599} height={850} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
-                        <SwiperSlide><Image width={1599} height={850} src="/images/raylaw.png" alt="Banner Raylaw" /></SwiperSlide>
-                        <SwiperSlide><Image width={1599} height={850} src="/images/solrenova-1.png" alt="Banner SolRenova" /></SwiperSlide>
-                        <SwiperSlide><Image width={1599} height={850} src="/images/psicho-1.png" alt="Banner SolRenova" /></SwiperSlide>
-                        <SwiperSlide><Image width={1599} height={850} src="/images/raylaw-1.png" alt="Banner SolRenova" /></SwiperSlide>
+                        <SwiperSlide style={{ display: "flex", justifyContent: "center" }}><Image style={{ width: "90%" }} width={1599} height={847} src="/images/psicho.png" alt="Banner Psicho" /></SwiperSlide>
+                        <SwiperSlide style={{ display: "flex", justifyContent: "center" }}><Image style={{ width: "90%" }} width={1599} height={850} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></SwiperSlide>
+                        <SwiperSlide style={{ display: "flex", justifyContent: "center" }}><Image style={{ width: "90%" }} width={1599} height={850} src="/images/raylaw.png" alt="Banner Raylaw" /></SwiperSlide>
+                        <SwiperSlide style={{ display: "flex", justifyContent: "center" }}><Image style={{ width: "90%" }} width={1599} height={850} src="/images/solrenova-1.png" alt="Banner SolRenova" /></SwiperSlide>
+                        <SwiperSlide style={{ display: "flex", justifyContent: "center" }}><Image style={{ width: "90%" }} width={1599} height={850} src="/images/psicho-1.png" alt="Banner SolRenova" /></SwiperSlide>
+                        <SwiperSlide style={{ display: "flex", justifyContent: "center" }}><Image style={{ width: "90%" }} width={1599} height={850} src="/images/raylaw-1.png" alt="Banner SolRenova" /></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
