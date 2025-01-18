@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import * as React from 'react';
@@ -7,7 +8,6 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import { IoMdMenu } from "react-icons/io";
 import Typography from '@mui/material/Typography';
-import Image from 'next/image';
 import StartButton from '../StartButton';
 import { Link } from 'react-scroll'
 import { FaWhatsapp } from "react-icons/fa";
@@ -30,7 +30,7 @@ export default function Header(props: Props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', gap: '10px', backgroundColor: '#021526', height: '100%', py: '20px' }}>
             <Box sx={{ width: "170px" }}>
-                <Image src="/images/valebytes-logo-transparent.png" width={582} height={126} alt="Logo ValeBytes" />
+                <img src="/images/valebytes-logo-transparent.png" alt="Logo ValeBytes" />
             </Box>
             <Divider />
             <nav className="flex justify-center w-full mt-1.5">
@@ -80,7 +80,7 @@ export default function Header(props: Props) {
                     component="div"
                     sx={{ display: 'block', width: '160px' }}
                 >
-                    <Image src="/images/valebytes-logo-transparent.png" width={582} height={126} alt="Logo ValeBytes" />
+                    <img src="/images/valebytes-logo-transparent.png" alt="Logo ValeBytes" />
                 </Typography>
                 <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                     <nav className="flex w-full mt-1.5">

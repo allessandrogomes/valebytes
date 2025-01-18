@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
-import Image from 'next/image'
 
 export default function IntroSection() {
     return (
@@ -9,7 +9,7 @@ export default function IntroSection() {
                 <h1 className="leading-[40px] capitalize font-semibold xl:leading-[90px] text-4xl sm:text-6xl md:text-7xl"><span className="text-color3">Código Personalizado</span>,<br /> Sem Genéricos</h1>
                 <h2 className="mt-6 text-xl sm:text-2xl">Soluções Exclusivas com Código Personalizado:<br />Levantamento Rigoroso, Alta Performance, Tecnologia de Ponta e SEO Otimizado</h2>
             </div>
-            <Image className="hidden relative bottom-[70px] xl:block" src="/images/intro.webp" width={500} height={200} alt="Imagem Início" />
+            <img className="hidden relative bottom-[70px] w-[500px] xl:block" src="/images/intro.webp" alt="Imagem Início" />
         </section>
     )
 } 

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import { A11y, Autoplay, EffectCoverflow, Pagination } from 'swiper/modules'
@@ -5,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
-import Image from 'next/image'
 
 export default function ProjectsSection() {
     return (
@@ -24,12 +24,12 @@ export default function ProjectsSection() {
                         autoplay={{ delay: 2000 }}
                         grabCursor
                     >
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><Image width={1599} height={847} src="/images/psicho.png" alt="Banner Psicho" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><Image width={1599} height={850} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><Image width={1599} height={850} src="/images/raylaw.png" alt="Banner Raylaw" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><Image width={1599} height={850} src="/images/solrenova-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><Image width={1599} height={850} src="/images/psicho-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><Image width={1599} height={850} src="/images/raylaw-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img src="/images/psicho.png" alt="Banner Psicho" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img src="/images/raylaw.png" alt="Banner Raylaw" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img src="/images/solrenova-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img src="/images/psicho-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img src="/images/raylaw-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
                     </Swiper>
                 </div>
                 <div className="w-full sm:hidden">
@@ -42,12 +42,12 @@ export default function ProjectsSection() {
                         speed={900}
                         autoplay={{ delay: 2000 }}
                     >
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><Image style={{ width: "90%", display: "block", margin: "0 auto" }} width={1599} height={847} src="/images/psicho.png" alt="Banner Psicho" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><Image style={{ width: "90%", display: "block", margin: "0 auto" }} width={1599} height={850} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><Image style={{ width: "90%", display: "block", margin: "0 auto" }} width={1599} height={850} src="/images/raylaw.png" alt="Banner Raylaw" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><Image style={{ width: "90%", display: "block", margin: "0 auto" }} width={1599} height={850} src="/images/solrenova-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><Image style={{ width: "90%", display: "block", margin: "0 auto" }} width={1599} height={850} src="/images/psicho-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><Image style={{ width: "90%", display: "block", margin: "0 auto" }} width={1599} height={850} src="/images/raylaw-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/psicho.png" alt="Banner Psicho" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/raylaw.png" alt="Banner Raylaw" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/solrenova-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/psicho-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/raylaw-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
