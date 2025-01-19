@@ -17,24 +17,15 @@ export default function ContactSection() {
     const handleSubmit = async (e: any) => {
         e.preventDefault()
         setIsSubmitting(true)
+        setIsSubmittedSucessfully(null)
 
-        try {
-            const response = await fetch("https://valebytes-api.vercel.app/api/send-email", {
-                method: "POST",
-                headers: { "Content-Type:": "application/json" },
-                body: JSON.stringify(formData)
-            })
-            
-            if (!response.ok) {
-                throw new Error("Erro ao enviar o formulário. Tente novamente.")
-            }
+        const response = await fetch("https://valebytes-api.vercel.app/api/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        })
 
-            const data = await response.json()
-
-            if (!data.success) {
-                throw new Error("Erro ao enviar o formulário. Tente novamente.")
-            }
-
+        if (response.ok) {
             setIsSubmittedSucessfully(true)
             setIsSubmitting(false)
             setFormData({
@@ -43,9 +34,17 @@ export default function ContactSection() {
                 email: "",
                 message: ""
             })
-        } catch (error) {
-            setIsSubmitting(false)
-            setIsSubmittedSucessfully(false)
+        } else {
+            setTimeout(() => {
+                setIsSubmittedSucessfully(false)
+                setIsSubmitting(false)
+                setFormData({
+                    name: "",
+                    phone: "",
+                    email: "",
+                    message: ""
+                })
+            }, 3000)
         }
     }
 
