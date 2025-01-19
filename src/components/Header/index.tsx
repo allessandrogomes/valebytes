@@ -54,7 +54,7 @@ export default function Header(props: Props) {
             </nav>
             <Box sx={{ display: { xs: 'flex', lg: 'none' }, gap: "50px", alignItems: "center", color: "#FFFFFF", flexDirection: "column" }}>
                 <StartButton />
-                <a target='_blank' href="https://www.google.com/">
+                <a target='_blank' href="https://wa.me/5574999393254">
                     <FaWhatsapp style={{ color: "#2DD36B" }} size={35} />
                 </a>
             </Box>
@@ -105,7 +105,7 @@ export default function Header(props: Props) {
                 </Box>
                 <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: "center", color: "#FFFFFF" }}>
                     <StartButton />
-                    <a target='_blank' href="https://www.google.com/">
+                    <a target='_blank' href="https://wa.me/5574999393254">
                         <FaWhatsapp style={{ position: "relative", left: "30px", color: "#2DD36B" }} size={35} />
                     </a>
                 </Box>
