@@ -1,20 +1,22 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: 'ValeBytes - Seu negócio Web no Vale do São Francisco',
-    description: 'A ValeBytes oferece soluções em desenvolvimento de sites, landing pages e sistemas web personalizados em Juazeiro e Petrolina. Transforme sua presença online no Vale do São Francisco com tecnologia de ponta e design exclusivo.',
-    keywords: ['página institucional', 'landing page', 'landing page juazeiro', 'landing page petrolina', 'empresa de tecnologia juazeiro', 'empresa de tecnologia petrolina'],
+    title: 'Criação de Sites em Juazeiro e Petrolina | ValeBytes',
+    description: 'A ValeBytes é uma empresa especializada em criação de sites em Juazeiro BA e Petrolina PE, oferecendo soluções personalizadas para sua presença online com design e tecnologia de ponta.',
+    keywords: ['Criação de sites Juazeiro BA', 'Criação de sites Petrolina PE', 'Desenvolvimento de sites Vale do São Francisco', 'Empresa criação de sites Juazeiro', 'Criar site Petrolina', 'Agência web Juazeiro e Petrolina', 'Sites personalizados Juazeiro BA', 'Soluções web em Petrolina', 'Landing pages Juazeiro', 'Desenvolvimento web Vale do São Francisco', 'sites para pequenos negócios em Petrolina', 'agência de sites em Petrolina e Juazeiro', 'site profissional para empresas em Juazeiro', 'desenvolvimento de sites para empresas em Petrolina-PE', 'criação de sites em Juazeiro-BA'],
     robots: 'index, follow',
     openGraph: {
         type: 'website',
-        title: 'ValeBytes - Seu negócio Web no Vale do São Francisco',
-        description: 'A ValeBytes oferece soluções em desenvolvimento de sites, landing pages e sistemas web personalizados em Juazeiro e Petrolina. Transforme sua presença online no Vale do São Francisco com tecnologia de ponta e design exclusivo.',
+        title: 'Criação de Sites em Juazeiro e Petrolina | ValeBytes',
+        description: 'A ValeBytes é uma empresa especializada em criação de sites em Juazeiro BA e Petrolina PE, oferecendo soluções personalizadas para sua presença online com design e tecnologia de ponta.',
         url: 'https://www.valebytes.com.br',
+        images: 'https://valebytes.com.br/images/valebytes-logo-transparent.png'
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'ValeBytes - Seu negócio Web no Vale do São Francisco',
-        description: 'A ValeBytes oferece soluções em desenvolvimento de sites, landing pages e sistemas web personalizados em Juazeiro e Petrolina. Transforme sua presença online no Vale do São Francisco com tecnologia de ponta e design exclusivo.',
+        title: 'Criação de Sites em Juazeiro e Petrolina | ValeBytes',
+        description: 'A ValeBytes é uma empresa especializada em criação de sites em Juazeiro BA e Petrolina PE, oferecendo soluções personalizadas para sua presença online com design e tecnologia de ponta.',
+        images: 'https://valebytes.com.br/images/valebytes-logo-transparent.png'
     },
     icons: '/favicon.ico'
 }
