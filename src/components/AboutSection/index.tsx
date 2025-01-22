@@ -2,7 +2,7 @@
 
 export default function AboutSection() {
     return (
-        <section className="flex flex-col items-center justify-center w-full max-w-full bg-about bg-auto bg-no-repeat text-justify lg:text-start px-6 sm:px-0 mb-[150px] md:mb-[250px]" id="sobre">
+        <section className="flex flex-col items-center justify-center w-full max-w-full bg-about bg-auto bg-no-repeat bg-right-top text-justify lg:text-start px-6 sm:px-0 mb-[150px] md:mb-[250px]" id="sobre">
             <h2 className="font-semibold mb-4 xl:mb-0 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Sobre Nós</h2>
             <div className="flex justify-center items-center gap-[50px] w-full max-w-full">
                 <img className="hidden w-[500px] xl:block" src="/images/about-2.webp" alt="Imagem Sobre a ValeBytes" />
