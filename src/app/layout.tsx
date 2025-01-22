@@ -25,6 +25,8 @@ export const metadata: Metadata = {
 }
 
 import "./globals.css"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 export default function RootLayout({
     children,
@@ -49,8 +51,10 @@ export default function RootLayout({
 
             </head>
             <body>
+                <Header />
                 {/* Layout UI */}
                 <main>{children}</main>
+                <Footer />
             </body>
         </html>
     )
