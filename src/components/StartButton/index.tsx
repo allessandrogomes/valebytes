@@ -14,7 +14,7 @@ export default function StartButton() {
             duration={50}
             className="bg-color1 py-2 px-4 rounded-lg text-two text-base font-medium cursor-pointer"
         >
-            Iniciar Projeto
+            Criar site
         </Link>
     )
 }
