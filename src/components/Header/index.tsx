@@ -30,7 +30,7 @@ export default function Header(props: Props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', gap: '10px', backgroundColor: '#021526', height: '100%', py: '20px' }}>
             <Box sx={{ width: "170px" }}>
-                <img src="/images/valebytes-logo-transparent.png" alt="Logo ValeBytes" />
+                <img src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
             </Box>
             <Divider />
             <nav className="flex justify-center w-full mt-1.5">
@@ -54,7 +54,7 @@ export default function Header(props: Props) {
             </nav>
             <Box sx={{ display: { xs: 'flex', lg: 'none' }, gap: "50px", alignItems: "center", color: "#FFFFFF", flexDirection: "column" }}>
                 <StartButton />
-                <a target='_blank' href="https://wa.me/5574999393254">
+                <a target='_blank' href="https://wa.me/5574999393254" title="Chat do WhatsApp da ValeBytes">
                     <FaWhatsapp style={{ color: "#2DD36B" }} size={35} />
                 </a>
             </Box>
@@ -80,7 +80,7 @@ export default function Header(props: Props) {
                     component="div"
                     sx={{ display: 'block', width: '160px' }}
                 >
-                    <img src="/images/valebytes-logo-transparent.png" alt="Logo ValeBytes" />
+                    <img src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
                 </Typography>
                 <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                     <nav className="flex w-full mt-1.5">
@@ -105,7 +105,7 @@ export default function Header(props: Props) {
                 </Box>
                 <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: "center", color: "#FFFFFF" }}>
                     <StartButton />
-                    <a target='_blank' href="https://wa.me/5574999393254">
+                    <a target='_blank' href="https://wa.me/5574999393254" title="Chat do WhatsApp da ValeBytes">
                         <FaWhatsapp style={{ position: "relative", left: "30px", color: "#2DD36B" }} size={35} />
                     </a>
                 </Box>

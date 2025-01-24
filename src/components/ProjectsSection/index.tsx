@@ -24,12 +24,12 @@ export default function ProjectsSection() {
                         autoplay={{ delay: 2000 }}
                         grabCursor
                     >
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img src="/images/psicho.png" alt="Banner Psicho" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img src="/images/raylaw.png" alt="Banner Raylaw" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img src="/images/solrenova-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img src="/images/psicho-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img src="/images/raylaw-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" title="Site da Psicóloga Ana Martins" target="_blank"><img src="/images/psicho.webp" alt="Imagem do site Psicóloga Ana Martins" title="Imagem do site Psicóloga Ana Martins"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" title="Site da empresa SolRenova" target="_blank"><img src="/images/solrenova.webp" alt="Imagem do site SolRenova" title="Imagem do site SolRenova"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" title="Site da empresa de advocacia Raylaw" target="_blank"><img src="/images/raylaw.webp" alt="Imagem do site de advocacia Raylaw" title="Imagem do site de advocacia Raylaw"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" title="Site da empresa SolRenova" target="_blank"><img src="/images/solrenova-1.webp" alt="Banner SolRenova" title="Imagem do site SolRenova"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" title="Site da Psicóloga Ana Martins" target="_blank"><img src="/images/psicho-1.webp" alt="Imagem do site Psicóloga Ana Martins" title="Imagem do site Psicóloga Ana Martins"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" title="Site da empresa de advocacia Raylaw" target="_blank"><img src="/images/raylaw-1.webp" alt="Imagem do site de advocacia Raylaw" title="Imagem do site de advocacia Raylaw"/></a></SwiperSlide>
                     </Swiper>
                 </div>
                 <div className="w-full sm:hidden">
@@ -42,12 +42,12 @@ export default function ProjectsSection() {
                         speed={900}
                         autoplay={{ delay: 2000 }}
                     >
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/psicho.png" alt="Banner Psicho" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/solrenova.png" alt="Banner SolRenova Empresa de Energia Solar" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/raylaw.png" alt="Banner Raylaw" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://solrenova.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/solrenova-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://psichoana.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/psicho-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
-                        <SwiperSlide><a href="https://raylaw.vercel.app" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/raylaw-1.png" alt="Banner SolRenova" /></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" title="Site da Psicóloga Ana Martins" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/psicho.webp" alt="Imagem do site Psicóloga Ana Martins" title="Imagem do site Psicóloga Ana Martins"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" title="Site da empresa SolRenova" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/solrenova.webp" alt="Imagem do site SolRenova" title="Imagem do site SolRenova"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" title="Site da empresa de advocacia Raylaw" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/raylaw.webp" alt="Imagem do site de advocacia Raylaw" title="Imagem do site de advocacia Raylaw"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://solrenova.vercel.app" title="Site da empresa SolRenova" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/solrenova-1.webp" alt="Imagem do site SolRenova" title="Imagem do site SolRenova"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://psichoana.vercel.app" title="Site da Psicóloga Ana Martins" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/psicho-1.webp" alt="Imagem do site Psicóloga Ana Martins"  title="Imagem do site Psicóloga Ana Martins"/></a></SwiperSlide>
+                        <SwiperSlide><a href="https://raylaw.vercel.app" title="Site da empresa de advocacia Raylaw" target="_blank"><img style={{ width: "90%", display: "block", margin: "0 auto" }} src="/images/raylaw-1.webp" alt="Imagem do site de advocacia Raylaw" title="Imagem do site de advocacia Raylaw"/></a></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
