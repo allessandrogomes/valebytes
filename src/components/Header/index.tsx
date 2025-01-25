@@ -30,7 +30,7 @@ export default function Header(props: Props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', gap: '10px', backgroundColor: '#021526', height: '100%', py: '20px' }}>
             <Box sx={{ width: "170px" }}>
-                <img src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
+                <img className="w-full h-full" src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
             </Box>
             <Divider />
             <nav className="flex justify-center w-full mt-1.5">
@@ -80,7 +80,7 @@ export default function Header(props: Props) {
                     component="div"
                     sx={{ display: 'block', width: '160px' }}
                 >
-                    <img src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
+                    <img className="w-full h-full" src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
                 </Typography>
                 <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                     <nav className="flex w-full mt-1.5">
