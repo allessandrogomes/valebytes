@@ -41,6 +41,8 @@ export default function RootLayout({
                 <link rel="canonical" href="https://valebytes.com.br/" />
                 <link rel="image_src" href="https://valebytes.com.br/images/medium-logo.webp"/>
                 <link rel="preload" href="/fonts/clash-display/ClashDisplay-Semibold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+                <link rel="preload" as="image" href="/images/intro.webp"/>
+                <link rel="preload" as="image" href="/images/lines.webp"/>
             </head>
             <body>
                 <Header />
