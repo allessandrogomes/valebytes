@@ -16,7 +16,7 @@ export default function IntroSection({ city }: IIntroSection) {
                 <h2 className="mt-6 text-xl sm:text-3xl">Destaque Sua Empresa na Internet com um Site Profissional e Moderno</h2>
             </div>
             <img
-                className="hidden relative bottom-[70px] w-[500px] h-full xl:block"
+                className="hidden relative bottom-[140px] w-[500px] h-full xl:block"
                 src="/images/intro.webp"
                 alt="Imagem ilustrativa de um notebook"
                 title="Imagem ilustrativa de um notebook"
