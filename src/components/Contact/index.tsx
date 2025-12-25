@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { Mail } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { Toast } from './Toast';
+import { Mail } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Toast } from "./Toast";
 
 export function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: '',
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmittedSucessfully, setIsSubmittedSucessfully] = useState<
@@ -22,9 +22,9 @@ export function Contact() {
     setIsSubmittedSucessfully(null);
 
     try {
-      const response = await fetch('http://localhost:3001/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("http://localhost:3001/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -32,21 +32,21 @@ export function Contact() {
 
       if (response.ok) {
         setIsSubmittedSucessfully(true);
-        setFormData({ name: '', phone: '', email: '', message: '' });
+        setFormData({ name: "", phone: "", email: "", message: "" });
       } else {
         setIsSubmittedSucessfully(false);
-        console.error('Erro na resposta:', data.message);
+        console.error("Erro na resposta:", data.message);
       }
     } catch (error) {
       setIsSubmittedSucessfully(false);
-      console.error('Erro na requisição:', error);
+      console.error("Erro na requisição:", error);
     } finally {
       setIsSubmitting(false);
     }
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({
       ...formData,
@@ -67,12 +67,12 @@ export function Contact() {
       <Toast
         message={
           isSubmittedSucessfully === true
-            ? 'Email enviado com sucesso! Entraremos em contato em breve.'
+            ? "Email enviado com sucesso! Entraremos em contato em breve."
             : isSubmittedSucessfully === false
-              ? 'Erro ao enviar email. Tente novamente ou entre em contato pelo WhatsApp.'
-              : ''
+              ? "Erro ao enviar email. Tente novamente ou entre em contato pelo WhatsApp."
+              : ""
         }
-        type={isSubmittedSucessfully === true ? 'success' : 'error'}
+        type={isSubmittedSucessfully === true ? "success" : "error"}
         isVisible={isSubmittedSucessfully !== null}
         onClose={() => setIsSubmittedSucessfully(null)}
       />
@@ -93,7 +93,7 @@ export function Contact() {
           {/* Conteúdo principal */}
           <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-start">
             {/* Formulário */}
-            <div className="bg-white rounded-lg p-6 sm:p-8 flex-1 w-full">
+            <div className="bg-[#EEEEEE] rounded-lg p-6 sm:p-8 flex-1 w-full">
               <h3 className="text-xl sm:text-2xl font-semibold mb-4 md:mb-6 text-black">
                 Envie sua mensagem e entraremos em contato
               </h3>
@@ -142,7 +142,7 @@ export function Contact() {
                   type="submit"
                   className="bg-[#3A5DFF] text-white p-2 sm:p-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-[#3a5effe1] transition-all duration-300 cursor-pointer disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500"
                 >
-                  {isSubmitting ? 'Enviando...' : 'Enviar mensagem'}
+                  {isSubmitting ? "Enviando..." : "Enviar mensagem"}
                 </button>
               </form>
             </div>

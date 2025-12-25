@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { CheckCircle2, XCircle, X } from 'lucide-react';
-import { useEffect } from 'react';
+import { CheckCircle2, XCircle, X } from "lucide-react";
+import { useEffect } from "react";
 
 interface ToastProps {
   message: string;
-  type: 'success' | 'error';
+  type: "success" | "error";
   isVisible: boolean;
   onClose: () => void;
 }
@@ -25,16 +25,16 @@ export function Toast({ message, type, isVisible, onClose }: ToastProps) {
 
   return (
     <div
-      className={`fixed top-24 right-4 md:right-8 z-50 flex items-center gap-3 bg-white rounded-lg shadow-lg p-4 min-w-[300px] max-w-[400px] transform transition-all duration-300 ${
-        isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+      className={`fixed top-24 right-4 md:right-8 z-50 flex items-center gap-3 bg-[#EEEEEE] rounded-lg shadow-lg p-4 min-w-[300px] max-w-[400px] transform transition-all duration-300 ${
+        isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
       }`}
     >
       <div
         className={`flex-shrink-0 ${
-          type === 'success' ? 'text-green-500' : 'text-red-500'
+          type === "success" ? "text-green-500" : "text-red-500"
         }`}
       >
-        {type === 'success' ? (
+        {type === "success" ? (
           <CheckCircle2 size={24} />
         ) : (
           <XCircle size={24} />
