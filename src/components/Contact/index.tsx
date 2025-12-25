@@ -80,10 +80,10 @@ export function Contact() {
         <div className="mx-4 sm:mx-6 md:mx-8 lg:mx-20 xl:mx-40 flex flex-col gap-8 md:gap-12">
           {/* Título da seção */}
           <div className="text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold uppercase text-white mb-3 md:mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold uppercase text-[#EEEEEE] mb-3 md:mb-4">
               Pronto para dar o próximo passo?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-white opacity-90">
+            <p className="text-sm sm:text-base md:text-lg text-[#EEEEEE] opacity-90">
               Envie seu projeto pelo formulário ou fale diretamente pelo
               WhatsApp. Estamos prontos para entender sua ideia e criar algo
               único para o seu negócio.
@@ -140,7 +140,7 @@ export function Contact() {
                 <button
                   disabled={isSubmitting}
                   type="submit"
-                  className="bg-[#3A5DFF] text-white p-2 sm:p-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-[#3a5effe1] transition-all duration-300 cursor-pointer disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500"
+                  className="bg-[#3A5DFF] text-[#EEEEEE] p-2 sm:p-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-[#3a5effe1] transition-all duration-300 cursor-pointer disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500"
                 >
                   {isSubmitting ? "Enviando..." : "Enviar mensagem"}
                 </button>
@@ -149,13 +149,13 @@ export function Contact() {
 
             {/* Separador OU */}
             <div className="hidden lg:flex items-center justify-center self-center">
-              <span className="text-white text-xl md:text-2xl font-bold">
+              <span className="text-[#EEEEEE] text-xl md:text-2xl font-bold">
                 OU
               </span>
             </div>
 
             {/* Informações de contato */}
-            <div className="flex-1 w-full text-white self-center">
+            <div className="flex-1 w-full text-[#EEEEEE] self-center">
               <p className="mb-3 md:mb-4 text-sm sm:text-base md:text-lg font-semibold">
                 Fale conosco por um desses contatos:
               </p>

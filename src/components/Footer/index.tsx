@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6 md:py-8">
+    <footer className="bg-gray-800 text-[#EEEEEE] py-6 md:py-8">
       <div className="mx-4 sm:mx-6 md:mx-8 lg:mx-20 xl:mx-40 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm sm:text-base text-gray-400 text-center md:text-left">
           Desenvolvido por VALEBYTES © 2026

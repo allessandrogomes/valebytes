@@ -7,7 +7,7 @@ export interface IProcessStep {
 export function ProcessStep({ icon, title, description }: IProcessStep) {
   return (
     <div className="flex flex-col items-center gap-3 md:gap-4 flex-1 h-[212px]">
-      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#3A5DFF] rounded-lg flex items-center justify-center text-white">
+      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#3A5DFF] rounded-lg flex items-center justify-center text-[#EEEEEE]">
         {icon}
       </div>
       <h3 className="text-base sm:text-lg font-semibold text-center">

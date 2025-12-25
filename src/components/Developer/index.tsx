@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { HeaderSection } from '../HeaderSection';
-import { SectionLayout } from '../SectionLayout';
-import { Linkedin } from 'lucide-react';
+import { HeaderSection } from "../HeaderSection";
+import { SectionLayout } from "../SectionLayout";
+import { Linkedin } from "lucide-react";
 
 export function Developer() {
   return (
@@ -41,7 +41,7 @@ export function Developer() {
             href="https://linkedin.com/in/allessandrogomes"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#3A5DFF] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-[#3a5effe1] transition-all duration-300"
+            className="inline-flex items-center gap-2 bg-[#3A5DFF] text-[#EEEEEE] px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-[#3a5effe1] transition-all duration-300"
           >
             <Linkedin size={18} className="sm:w-5 sm:h-5" />
             Ver perfil no LinkedIn

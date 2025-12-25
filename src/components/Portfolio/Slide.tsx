@@ -10,7 +10,7 @@ export const Slide = memo(function Slide({ item }: { item: IImage }) {
       <a
         href={item.href}
         target="_blank"
-        className="flex items-center gap-2 w-max rounded-lg bg-[#3A5DFF] text-white p-2 hover:bg-[#3a5effe1]"
+        className="flex items-center gap-2 w-max rounded-lg bg-[#3A5DFF] text-[#EEEEEE] p-2 hover:bg-[#3a5effe1]"
       >
         <Globe />
         Ver website
