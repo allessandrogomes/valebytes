@@ -39,7 +39,7 @@ const websites: IImage[] = [
 
 export function Portfolio() {
   return (
-    <SectionLayout id="portfolio">
+    <SectionLayout id="portfolio" className="mt-20">
       <HeaderSection
         title="Portfólio"
         subtitle="Uma seleção dos sites que desenvolvemos do zero — cada um com identidade própria, criado para destacar o que torna cada negócio único"
