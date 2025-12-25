@@ -1,8 +1,18 @@
-import AboutSection from "@/components/AboutSection"
-import ContactSection from "@/components/ContactSection"
-import DifferencesSection from "@/components/DifferencesSection"
-import IntroSection from "@/components/IntroSection"
-import ProjectsSection from "@/components/ProjectsSection"
+import '@fontsource/poppins';
+import '@fontsource/poppins/200.css';
+import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+import '@fontsource/poppins/800.css';
+import '@fontsource/poppins/900.css';
+import { HeroSection } from '@/components/HeroSection';
+import { Portfolio } from '@/components/Portfolio';
+import { Differences } from '@/components/Differences';
+import { Process } from '@/components/Process';
+import { Developer } from '@/components/Developer';
+import { Contact } from '@/components/Contact';
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -35,16 +45,14 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-    return (
-        <>
-            <div className="bg-home bg-cover bg-no-repeat w-full absolute z-[-1] h-[1300px]"></div>
-            <div className="flex max-w-full flex-col items-center">
-                <IntroSection />
-                <ProjectsSection />
-                <DifferencesSection />
-                <AboutSection />
-                <ContactSection />
-            </div>
-        </>
-    )
+  return (
+    <>
+      <HeroSection />
+      <Portfolio />
+      <Differences />
+      <Process />
+      <Developer />
+      <Contact />
+    </>
+  );
 }
