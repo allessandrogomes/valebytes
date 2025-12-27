@@ -1,132 +1,250 @@
-/* eslint-disable @next/next/no-img-element */
-'use client'
+"use client";
 
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import { IoMdMenu } from "react-icons/io";
-import Typography from '@mui/material/Typography';
-import StartButton from '../StartButton';
-import { Link } from 'react-scroll'
-import { FaWhatsapp } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
-interface Props {
-    windowContainer?: () => Window;
-}
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("inicio");
 
-const drawerWidth = 240;
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-export default function Header(props: Props) {
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
-    const { windowContainer } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false)
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerHeight;
 
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState);
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    closeMenu();
+  };
+
+  useEffect(() => {
+    const sections = [
+      "inicio",
+      "portfolio",
+      "diferenciais",
+      "como-funciona",
+      "desenvolvedor",
+      "contato",
+    ];
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "-20% 0px -60% 0px",
+      threshold: 0,
     };
 
-    const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', gap: '10px', backgroundColor: '#021526', height: '100%', py: '20px' }}>
-            <Box sx={{ width: "170px" }}>
-                <img className="w-full h-full" src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
-            </Box>
-            <Divider />
-            <nav className="flex justify-center w-full mt-1.5">
-                <ul className="flex flex-col gap-10 text-base font-medium">
-                    <li>
-                        <Link to="inicio" role="button" aria-label="Scroll to respective Section" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
-                    </li>
-                    <li>
-                        <Link to="projetos" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
-                    </li>
-                    <li>
-                        <Link to="diferenciais" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
-                    </li>
-                    <li>
-                        <Link to="sobre" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
-                    </li>
-                    <li>
-                        <Link to="contato" role="button" aria-label="Scroll to respective Section" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
-                    </li>
-                </ul>
-            </nav>
-            <Box sx={{ display: { xs: 'flex', lg: 'none' }, gap: "50px", alignItems: "center", color: "#FFFFFF", flexDirection: "column" }}>
-                <StartButton />
-                <a target='_blank' href="https://wa.me/5574999393254" title="Chat do WhatsApp da ValeBytes">
-                    <FaWhatsapp style={{ color: "#2DD36B" }} size={35} />
-                </a>
-            </Box>
-        </Box>
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
     );
 
-    const container = windowContainer !== undefined ? () => windowContainer().document.body : undefined;
+    sections.forEach((sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        observer.observe(section);
+      }
+    });
 
-    return (
-        <header className="fixed z-[999] flex w-full h-[80px] justify-center mb-[150px]">
-            <div className="flex justify-evenly items-center w-full text-xl font-medium">
-                <IconButton
-                    color="inherit"
-                    aria-label="open drawer"
-                    edge="start"
-                    onClick={handleDrawerToggle}
-                    sx={{ mr: 2, display: { md: 'none' } }}
-                >
-                    <IoMdMenu />
-                </IconButton>
-                <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{ display: 'block', width: '160px' }}
-                >
-                    <img className="w-full h-full" src="/images/valebytes-logo-transparent.webp" alt="Logo ValeBytes" title="Logo ValeBytes"/>
-                </Typography>
-                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-                    <nav className="flex w-full mt-1.5">
-                        <ul className="flex gap-10 text-base font-medium list-no-mobile">
-                            <li>
-                                <Link to="inicio" role="button" aria-label="Scroll to respective Section" spy smooth duration={50} className="text-color2 cursor-pointer">Início</Link>
-                            </li>
-                            <li>
-                                <Link to="projetos" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Projetos</Link>
-                            </li>
-                            <li>
-                                <Link to="diferenciais" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Diferenciais</Link>
-                            </li>
-                            <li>
-                                <Link to="sobre" role="button" aria-label="Scroll to respective Section" spy smooth offset={-200} duration={50} className="text-color2 cursor-pointer">Sobre</Link>
-                            </li>
-                            <li>
-                                <Link to="contato" role="button" aria-label="Scroll to respective Section" spy smooth offset={-100} duration={50} className="text-color2 cursor-pointer">Contato</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </Box>
-                <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: "center", color: "#FFFFFF" }}>
-                    <StartButton />
-                    <a target='_blank' href="https://wa.me/5574999393254" title="Chat do WhatsApp da ValeBytes">
-                        <FaWhatsapp style={{ position: "relative", left: "30px", color: "#2DD36B" }} size={35} />
-                    </a>
-                </Box>
-            </div>
-            <nav>
-                <Drawer
-                    container={container}
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
-                    sx={{
-                        display: { xs: 'block', md: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                    }}
-                >
-                    {drawer}
-                </Drawer>
-            </nav>
-        </header>
-    );
+    return () => {
+      sections.forEach((sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
+
+  return (
+    <>
+      <header className="fixed z-99 w-full bg-[#EEEEEE] flex justify-between items-center h-20 px-10 md:px-20">
+        {/* Logo */}
+        <span className="uppercase font-bold text-xl">ValeBytes</span>
+
+        {/* Menu Desktop */}
+        <nav className="hidden lg:block">
+          <ul className="flex gap-6 xl:gap-8 font-medium">
+            <li
+              onClick={() => scrollToSection("inicio")}
+              className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
+                activeSection === "inicio"
+                  ? "border-[#3A5DFF]"
+                  : "border-transparent"
+              }`}
+            >
+              Início
+            </li>
+            <li
+              onClick={() => scrollToSection("portfolio")}
+              className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
+                activeSection === "portfolio"
+                  ? "border-[#3A5DFF]"
+                  : "border-transparent"
+              }`}
+            >
+              Portfólio
+            </li>
+            <li
+              onClick={() => scrollToSection("diferenciais")}
+              className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
+                activeSection === "diferenciais"
+                  ? "border-[#3A5DFF]"
+                  : "border-transparent"
+              }`}
+            >
+              Diferenciais
+            </li>
+            <li
+              onClick={() => scrollToSection("como-funciona")}
+              className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
+                activeSection === "como-funciona"
+                  ? "border-[#3A5DFF]"
+                  : "border-transparent"
+              }`}
+            >
+              Como funciona
+            </li>
+            <li
+              onClick={() => scrollToSection("desenvolvedor")}
+              className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
+                activeSection === "desenvolvedor"
+                  ? "border-[#3A5DFF]"
+                  : "border-transparent"
+              }`}
+            >
+              Nosso time
+            </li>
+          </ul>
+        </nav>
+
+        {/* Botão Desktop */}
+        <button
+          onClick={() => scrollToSection("contato")}
+          className="hidden lg:block bg-[#3A5DFF] text-[#EEEEEE] cursor-pointer p-2 rounded-lg transition-all duration-300 hover:bg-[#3a5effe1]"
+        >
+          Solicitar orçamento
+        </button>
+
+        {/* Menu Hamburguer Mobile */}
+        <button
+          className="lg:hidden flex flex-col justify-center items-center w-6 h-6 cursor-pointer"
+          onClick={toggleMenu}
+        >
+          <span
+            className={`bg-black h-0.5 w-6 rounded-full transition-all duration-300 ${
+              isMenuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`bg-black h-0.5 w-6 rounded-full my-1.5 transition-all duration-300 ${
+              isMenuOpen ? "opacity-0" : ""
+            }`}
+          ></span>
+          <span
+            className={`bg-black h-0.5 w-6 rounded-full transition-all duration-300 ${
+              isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
+        </button>
+      </header>
+
+      {/* Menu Mobile */}
+      <div
+        className={`lg:hidden fixed pb-8 top-20 left-0 w-full bg-[#EEEEEE] shadow-lg transition-all duration-300 z-50 ${
+          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <nav className="p-6">
+          <ul className="flex flex-col gap-6 font-medium">
+            <li
+              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
+                activeSection === "inicio"
+                  ? "text-[#3A5DFF] border-[#3A5DFF]"
+                  : "border-gray-100"
+              }`}
+              onClick={() => scrollToSection("inicio")}
+            >
+              Início
+            </li>
+            <li
+              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
+                activeSection === "portfolio"
+                  ? "text-[#3A5DFF] border-[#3A5DFF]"
+                  : "border-gray-100"
+              }`}
+              onClick={() => scrollToSection("portfolio")}
+            >
+              Portfólio
+            </li>
+            <li
+              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
+                activeSection === "diferenciais"
+                  ? "text-[#3A5DFF] border-[#3A5DFF]"
+                  : "border-gray-100"
+              }`}
+              onClick={() => scrollToSection("diferenciais")}
+            >
+              Diferenciais
+            </li>
+            <li
+              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
+                activeSection === "como-funciona"
+                  ? "text-[#3A5DFF] border-[#3A5DFF]"
+                  : "border-gray-100"
+              }`}
+              onClick={() => scrollToSection("como-funciona")}
+            >
+              Como funciona
+            </li>
+            <li
+              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
+                activeSection === "desenvolvedor"
+                  ? "text-[#3A5DFF] border-[#3A5DFF]"
+                  : "border-gray-100"
+              }`}
+              onClick={() => scrollToSection("desenvolvedor")}
+            >
+              Nosso time
+            </li>
+          </ul>
+        </nav>
+        {/* Botão Mobile */}
+        <button
+          className="ml-6 bg-[#3A5DFF] text-[#EEEEEE] cursor-pointer p-3 rounded-lg transition-all duration-300 hover:bg-[#3a5effe1]"
+          onClick={() => scrollToSection("contato")}
+        >
+          Solicitar orçamento
+        </button>
+      </div>
+
+      {/* Overlay */}
+      {isMenuOpen && (
+        <div
+          className="lg:hidden fixed inset-0 z-40 top-20 bg-black/40 backdrop-blur-xs"
+          onClick={closeMenu}
+        ></div>
+      )}
+    </>
+  );
 }

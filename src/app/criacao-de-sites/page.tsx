@@ -5,7 +5,7 @@ import { Process } from "@/components/Process";
 import { Developer } from "@/components/Developer";
 import { Contact } from "@/components/Contact";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <HeroSection />
