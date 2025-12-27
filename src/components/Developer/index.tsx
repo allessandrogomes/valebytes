@@ -3,12 +3,24 @@ import { HeaderSection } from "../HeaderSection";
 import { SectionLayout } from "../SectionLayout";
 import { Linkedin } from "lucide-react";
 
-export function Developer() {
+interface IDeveloper {
+  data?: {
+    title: string;
+    nome: string;
+    descricao: string;
+  };
+}
+
+export function Developer({ data }: IDeveloper) {
   return (
     <SectionLayout id="desenvolvedor">
       <HeaderSection
         title="Conheça nosso time"
-        subtitle="Por trás de cada projeto, há um desenvolvedor dedicado a transformar suas ideias em realidade digital."
+        subtitle={
+          data
+            ? data.title
+            : "Por trás de cada projeto, há um desenvolvedor dedicado a transformar suas ideias em realidade digital"
+        }
       />
 
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 mt-8 md:mt-12">
@@ -17,7 +29,7 @@ export function Developer() {
           <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#3A5DFF] shadow-lg">
             <img
               src="/alessandro.jpg"
-              alt="Allessandro Gomes - Desenvolvedor Web"
+              alt={`${data ? data.nome : "Alessandro Gomes"} - Desenvolvedor Web`}
               className="w-full h-full object-contain scale-111"
             />
           </div>
@@ -26,16 +38,15 @@ export function Developer() {
         {/* Informações */}
         <div className="flex-1 text-center lg:text-left">
           <h3 className="text-2xl sm:text-3xl font-bold mb-2">
-            Alessandro Gomes
+            {data ? data.nome : "Alessandro Gomes"}
           </h3>
           <p className="text-lg sm:text-xl text-[#3A5DFF] font-semibold mb-4 md:mb-6">
             Desenvolvedor Web Full Stack
           </p>
           <p className="text-sm sm:text-base text-black opacity-90 mb-6 leading-relaxed">
-            Desenvolvedor web experiente especializado em criar soluções
-            personalizadas e modernas para empresas. Com foco em qualidade,
-            performance e experiência do usuário, transformo ideias em realidade
-            digital através de código limpo e tecnologias atuais.
+            {data
+              ? data.descricao
+              : "Desenvolvedor web experiente especializado em criar soluções personalizadas e modernas para empresas. Com foco em qualidade, performance e experiência do usuário, transformo ideias em realidade digital através de código limpo e tecnologias atuais."}
           </p>
           <a
             href="https://linkedin.com/in/allessandrogomes"

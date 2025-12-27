@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:static": "next build && node scripts/generate-sitemap.mjs",
+    "build": "next build && node scripts/generate-sitemap.mjs",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,6 +17,7 @@
     "next": "16.0.10",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "schema-dts": "^1.1.5",
     "swiper": "^12.0.3",
     "tailwind-merge": "^3.4.0"
   },

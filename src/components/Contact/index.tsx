@@ -4,7 +4,11 @@ import { Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Toast } from "./Toast";
 
-export function Contact() {
+interface IContact {
+  data?: string;
+}
+
+export function Contact({ data }: IContact) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -22,11 +26,14 @@ export function Contact() {
     setIsSubmittedSucessfully(null);
 
     try {
-      const response = await fetch("http://localhost:3001/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://valebytes-api.vercel.app/api/send-email",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
 
@@ -81,7 +88,7 @@ export function Contact() {
           {/* Título da seção */}
           <div className="text-center lg:text-left">
             <h2 className="text-2xl sm:text-3xl font-bold uppercase text-[#EEEEEE] mb-3 md:mb-4">
-              Pronto para dar o próximo passo?
+              {data ? data : "Pronto para dar o próximo passo?"}
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-[#EEEEEE] opacity-90">
               Envie seu projeto pelo formulário ou fale diretamente pelo

@@ -37,12 +37,20 @@ const websites: IImage[] = [
   },
 ];
 
-export function Portfolio() {
+interface IPortfolio {
+  data?: string;
+}
+
+export function Portfolio({ data }: IPortfolio) {
   return (
     <SectionLayout id="portfolio" className="mt-20">
       <HeaderSection
         title="Portfólio"
-        subtitle="Uma seleção dos sites que desenvolvemos do zero — cada um com identidade própria, criado para destacar o que torna cada negócio único"
+        subtitle={
+          data
+            ? data
+            : "Uma seleção dos sites que desenvolvemos do zero — cada um com identidade própria, criado para destacar o que torna cada negócio único"
+        }
       />
 
       <div>

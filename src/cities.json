@@ -1,0 +1,746 @@
+[
+  {
+    "slug": "maceio-al",
+    "name": "Maceió",
+    "state": "AL",
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Maceió — cada projeto criado do zero para destacar o que torna cada negócio local único e relevante no mercado alagoano.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Maceió",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade única de cada negócio em Maceió.",
+        "performance": "Código otimizado para garantir carregamento rápido e experiência de alto desempenho para usuários da capital e região metropolitana.",
+        "liberdade": "Sem limitações de plataformas prontas, permitindo evolução contínua de acordo com o crescimento do seu negócio em Maceió."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Maceió",
+        "formulario": "Entenda sua ideia e necessidades rapidamente via formulário.",
+        "reuniao": "Alinhamento detalhado para definir objetivos e direcionamentos específicos do mercado local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados para empresas de Maceió.",
+        "desenvolvimento": "Construção do site com ajustes contínuos durante o processo, garantindo qualidade e foco local."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Maceió",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em criar soluções personalizadas para empresas em Maceió. Transformo ideias em realidade digital com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Maceió?"
+    },
+    "seoTitle": "Criação de Sites Profissionais em Maceió - AL",
+    "seoDescription": "Desenvolvimento de sites em Maceió para empresas, comércios e prestadores de serviço que atuam no maior centro econômico e comercial de Alagoas. Sites modernos, rápidos e otimizados para gerar resultados online.",
+    "keywords": [
+      "criação de sites em Maceió",
+      "desenvolvimento web Maceió",
+      "sites profissionais Maceió",
+      "agência de sites Maceió",
+      "SEO Maceió"
+    ]
+  },
+  {
+    "slug": "arapiraca-al",
+    "name": "Arapiraca",
+    "state": "AL",
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Arapiraca — cada projeto criado do zero para valorizar empresas do comércio e serviços do Agreste alagoano.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Arapiraca",
+        "exclusividade": "Sites criados para refletir a identidade única de cada negócio local em Arapiraca.",
+        "performance": "Código otimizado para carregamento rápido e experiência fluida para clientes e consumidores na cidade.",
+        "liberdade": "Sem limitações de templates prontos, garantindo evolução contínua do site conforme o crescimento do seu negócio no Agreste."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Arapiraca",
+        "formulario": "Entenda sua ideia e necessidades rapidamente via formulário.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade de Arapiraca.",
+        "proposta": "Escopo, prazo e investimento claros, considerando o perfil local do comércio e serviços.",
+        "desenvolvimento": "Construção do site com ajustes contínuos durante o processo, garantindo presença digital eficaz na cidade."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Arapiraca",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções personalizadas para empresas do Agreste alagoano. Transformo ideias em realidade digital com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Arapiraca?"
+    },
+    "seoTitle": "Criação de Sites para Empresas em Arapiraca - AL",
+    "seoDescription": "Criação de sites em Arapiraca para empresas do comércio e varejo que buscam profissionalizar sua presença digital, atrair mais clientes e expandir vendas no Agreste alagoano.",
+    "keywords": [
+      "criação de sites em Arapiraca",
+      "desenvolvimento web Arapiraca",
+      "sites para comércio e varejo",
+      "SEO Arapiraca"
+    ]
+  },
+  {
+    "slug": "salvador-ba",
+    "name": "Salvador",
+    "state": "BA",
+    "seoTitle": "Criação de Sites Profissionais em Salvador - BA",
+    "seoDescription": "Desenvolvimento de sites em Salvador focado em empresas, startups e negócios que precisam se destacar no maior mercado digital da Bahia. Sites rápidos, modernos e otimizados para o Google.",
+    "keywords": [
+      "criação de sites em Salvador",
+      "desenvolvimento web Salvador",
+      "sites profissionais Salvador",
+      "agência de sites Salvador",
+      "SEO local Salvador"
+    ],
+    "sections": {
+      "portfolio": "Explore os sites que desenvolvemos em Salvador — cada projeto criado do zero para destacar o que torna cada negócio único na capital baiana.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Salvador",
+        "exclusividade": "Sites criados com identidade própria para empresas e startups de Salvador, nada de templates genéricos.",
+        "performance": "Código otimizado e tecnologias modernas garantem desempenho rápido e escalabilidade para negócios da capital.",
+        "liberdade": "Total liberdade para evoluir o site com novos recursos conforme a necessidade de cada negócio em Salvador."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Salvador",
+        "formulario": "Entenda sua ideia e necessidades rapidamente via formulário.",
+        "reuniao": "Reunião de alinhamento para definir objetivos e direcionamentos adaptados ao mercado de Salvador.",
+        "proposta": "Proposta clara com escopo, prazo e investimento específicos para empresas da capital.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo resultados e presença digital de destaque."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Salvador",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em criar soluções digitais modernas e personalizadas para empresas de Salvador, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Salvador?"
+    }
+  },
+  {
+    "slug": "feira-de-santana-ba",
+    "name": "Feira de Santana",
+    "state": "BA",
+    "seoTitle": "Desenvolvimento de Sites em Feira de Santana - BA",
+    "seoDescription": "Criação de sites profissionais em Feira de Santana para empresas do comércio e serviços que desejam atrair mais clientes e fortalecer sua presença online no interior da Bahia.",
+    "keywords": [
+      "criação de sites em Feira de Santana",
+      "desenvolvimento de sites Feira",
+      "sites para comércio local",
+      "SEO Feira de Santana"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Feira de Santana — cada projeto feito do zero para valorizar empresas do comércio e serviços locais.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Feira de Santana",
+        "exclusividade": "Sites personalizados que refletem a identidade de cada negócio, sem templates prontos.",
+        "performance": "Tecnologias modernas e código otimizado garantem sites rápidos e eficientes para empresas do interior.",
+        "liberdade": "Sites com liberdade total para evoluir conforme o crescimento dos negócios em Feira de Santana."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Feira de Santana",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário.",
+        "reuniao": "Alinhamento detalhado para definir objetivos adaptados à realidade do comércio local.",
+        "proposta": "Escopo, prazo e investimento claros para empresas de Feira de Santana.",
+        "desenvolvimento": "Construção do site com ajustes durante todo o processo, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Feira de Santana",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções personalizadas para empresas de Feira de Santana, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Feira de Santana?"
+    }
+  },
+  {
+    "slug": "vitoria-da-conquista-ba",
+    "name": "Vitória da Conquista",
+    "state": "BA",
+    "seoTitle": "Criação de Sites em Vitória da Conquista - BA",
+    "seoDescription": "Desenvolvimento de sites em Vitória da Conquista voltado para empresas regionais que buscam autoridade digital, melhor posicionamento no Google e mais oportunidades de negócio.",
+    "keywords": [
+      "criação de sites Vitória da Conquista",
+      "desenvolvimento web Conquista",
+      "sites institucionais BA",
+      "SEO local Vitória da Conquista"
+    ],
+    "sections": {
+      "portfolio": "Confira os sites que desenvolvemos em Vitória da Conquista — cada projeto pensado para destacar empresas do sudoeste da Bahia.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Vitória da Conquista",
+        "exclusividade": "Sites criados do zero para refletir a identidade única de cada negócio regional.",
+        "performance": "Código moderno e otimizado garantindo sites rápidos e escaláveis na região.",
+        "liberdade": "Total liberdade para adicionar recursos e evoluir o site conforme a necessidade do negócio local."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Vitória da Conquista",
+        "formulario": "Entenda suas ideias e necessidades rapidamente via formulário.",
+        "reuniao": "Reunião de alinhamento para definir objetivos adaptados ao mercado regional.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às empresas de Vitória da Conquista.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital sólida na cidade."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Vitória da Conquista",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em criar soluções digitais para empresas do sudoeste da Bahia, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Vitória da Conquista?"
+    }
+  },
+  {
+    "slug": "camacari-ba",
+    "name": "Camaçari",
+    "state": "BA",
+    "seoTitle": "Criação de Sites Empresariais em Camaçari - BA",
+    "seoDescription": "Criação de sites em Camaçari para indústrias, empresas e prestadores de serviço que precisam de presença institucional forte, landing pages e soluções digitais profissionais.",
+    "keywords": [
+      "criação de sites em Camaçari",
+      "sites institucionais Camaçari",
+      "desenvolvimento web industrial",
+      "landing pages Camaçari"
+    ],
+    "sections": {
+      "portfolio": "Explore os sites que desenvolvemos em Camaçari — cada projeto criado do zero para destacar empresas industriais e comerciais da região.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Camaçari",
+        "exclusividade": "Sites personalizados e institucionais, com identidade própria para empresas e indústrias locais.",
+        "performance": "Código otimizado e tecnologias modernas para alta performance e escalabilidade de sites industriais.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade do negócio em Camaçari."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Camaçari",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário.",
+        "reuniao": "Reunião de alinhamento para definir objetivos e direcionamentos regionais.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados ao perfil industrial e comercial local.",
+        "desenvolvimento": "Construção do site com ajustes durante o processo, garantindo resultados profissionais."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Camaçari",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas industriais e comerciais de Camaçari, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Camaçari?"
+    }
+  },
+  {
+    "slug": "lauro-de-freitas-ba",
+    "name": "Lauro de Freitas",
+    "state": "BA",
+    "seoTitle": "Desenvolvimento de Sites em Lauro de Freitas - BA",
+    "seoDescription": "Criação de sites modernos em Lauro de Freitas para empresas, profissionais liberais e negócios locais que desejam crescer no ambiente digital e gerar mais leads.",
+    "keywords": [
+      "criação de sites em Lauro de Freitas",
+      "desenvolvimento web Lauro",
+      "sites para empresas locais",
+      "SEO Lauro de Freitas"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Lauro de Freitas — cada projeto criado do zero para destacar empresas e profissionais locais.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Lauro de Freitas",
+        "exclusividade": "Sites personalizados refletindo a identidade única de cada negócio na cidade.",
+        "performance": "Código otimizado e tecnologias modernas garantem alta performance e escalabilidade.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade do negócio local."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Lauro de Freitas",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros para empresas e profissionais da cidade.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital sólida."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Lauro de Freitas",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em criar soluções digitais para empresas e profissionais de Lauro de Freitas, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Lauro de Freitas?"
+    }
+  },
+  {
+    "slug": "juazeiro-ba",
+    "name": "Juazeiro",
+    "state": "BA",
+    "seoTitle": "Criação de Sites Profissionais em Juazeiro - BA",
+    "seoDescription": "Desenvolvimento de sites em Juazeiro focado em negócios regionais, comércio e prestadores de serviço que querem aumentar visibilidade, credibilidade e vendas online.",
+    "keywords": [
+      "criação de sites em Juazeiro",
+      "desenvolvimento web Juazeiro",
+      "sites profissionais BA",
+      "SEO local Juazeiro"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Juazeiro — cada projeto criado do zero para valorizar negócios regionais e do comércio local.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Juazeiro",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade do negócio regional."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Juazeiro",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados ao comércio local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados à realidade regional.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Juazeiro",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Juazeiro e região, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Juazeiro?"
+    }
+  },
+  {
+    "slug": "fortaleza-ce",
+    "name": "Fortaleza",
+    "state": "CE",
+    "seoTitle": "Criação de Sites Profissionais em Fortaleza - CE",
+    "seoDescription": "Desenvolvimento de sites em Fortaleza para empresas, startups e negócios digitais que atuam no principal polo econômico e tecnológico do Ceará. Soluções modernas, escaláveis e focadas em performance, SEO e conversão.",
+    "keywords": [
+      "criação de sites em Fortaleza",
+      "desenvolvimento web Fortaleza",
+      "agência digital Fortaleza",
+      "sites profissionais Fortaleza",
+      "SEO Fortaleza"
+    ],
+    "sections": {
+      "portfolio": "Confira os sites que desenvolvemos em Fortaleza — cada projeto criado do zero para valorizar empresas e startups locais.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Fortaleza",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos, escaláveis e com ótima performance.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade do seu negócio na capital cearense."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Fortaleza",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados ao mercado de Fortaleza.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados à realidade local.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Fortaleza",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Fortaleza e região, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Fortaleza?"
+    }
+  },
+  {
+    "slug": "caucaia-ce",
+    "name": "Caucaia",
+    "state": "CE",
+    "seoTitle": "Criação de Sites para Negócios Locais em Caucaia - CE",
+    "seoDescription": "Criação de sites em Caucaia para pequenos e médios negócios do comércio, serviços e construção que desejam fortalecer sua presença digital na região metropolitana de Fortaleza.",
+    "keywords": [
+      "criação de sites em Caucaia",
+      "desenvolvimento web Caucaia",
+      "sites para negócios locais Caucaia",
+      "SEO Caucaia"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Caucaia — cada projeto pensado para valorizar negócios locais e regionais.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Caucaia",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade do comércio local em Caucaia."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Caucaia",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados ao comércio regional.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Caucaia",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Caucaia e região, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Caucaia?"
+    }
+  },
+  {
+    "slug": "juazeiro-do-norte-ce",
+    "name": "Juazeiro do Norte",
+    "state": "CE",
+    "seoTitle": "Criação de Sites em Juazeiro do Norte - CE",
+    "seoDescription": "Desenvolvimento de sites em Juazeiro do Norte para empresas do comércio, serviços e turismo religioso que buscam presença digital própria, mais visibilidade e geração de clientes no Cariri.",
+    "keywords": [
+      "criação de sites em Juazeiro do Norte",
+      "desenvolvimento web Juazeiro do Norte",
+      "sites profissionais Cariri",
+      "SEO Juazeiro do Norte"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Juazeiro do Norte — cada projeto criado para valorizar negócios do comércio, serviços e turismo regional.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Juazeiro do Norte",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade do comércio e turismo do Cariri."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Juazeiro do Norte",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade regional.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados ao comércio e turismo local.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Juazeiro do Norte",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas do Cariri, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Juazeiro do Norte?"
+    }
+  },
+  {
+    "slug": "sao-luis-ma",
+    "name": "São Luís",
+    "state": "MA",
+    "seoTitle": "Criação de Sites Profissionais em São Luís - MA",
+    "seoDescription": "Desenvolvimento de sites em São Luís para empresas, comércios, serviços, turismo e instituições que atuam no principal centro econômico do Maranhão. Soluções web modernas, otimizadas para SEO e focadas em resultados.",
+    "keywords": [
+      "criação de sites em São Luís",
+      "desenvolvimento web São Luís",
+      "agência digital São Luís",
+      "sites profissionais São Luís",
+      "SEO São Luís"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em São Luís — cada projeto criado para valorizar negócios locais, comércio e instituições da cidade.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em São Luís",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade das empresas em São Luís."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em São Luís",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados ao comércio e serviços da cidade.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em São Luís",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de São Luís, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em São Luís?"
+    }
+  },
+  {
+    "slug": "imperatriz-ma",
+    "name": "Imperatriz",
+    "state": "MA",
+    "seoTitle": "Criação de Sites para Empresas em Imperatriz - MA",
+    "seoDescription": "Criação de sites em Imperatriz para empresas do comércio, saúde, educação e serviços que buscam fortalecer sua presença digital e atrair mais clientes no sudoeste maranhense.",
+    "keywords": [
+      "criação de sites em Imperatriz",
+      "desenvolvimento web Imperatriz",
+      "sites profissionais Imperatriz",
+      "SEO Imperatriz"
+    ],
+    "sections": {
+      "portfolio": "Confira os sites que desenvolvemos em Imperatriz — projetos criados para empresas do comércio, saúde e educação, valorizando o mercado local.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Imperatriz",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio regional.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos, escaláveis e confiáveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade das empresas em Imperatriz."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Imperatriz",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados ao mercado local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às condições das empresas do sudoeste maranhense.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Imperatriz",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Imperatriz, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Imperatriz?"
+    }
+  },
+  {
+    "slug": "joao-pessoa-pb",
+    "name": "João Pessoa",
+    "state": "PB",
+    "seoTitle": "Criação de Sites Profissionais em João Pessoa - PB",
+    "seoDescription": "Criação de sites em João Pessoa para empresas de comércio, serviços, turismo, saúde e setor público que buscam presença digital profissional, performance e posicionamento no Google.",
+    "keywords": [
+      "criação de sites em João Pessoa",
+      "desenvolvimento web João Pessoa",
+      "agência digital João Pessoa",
+      "sites profissionais João Pessoa",
+      "SEO João Pessoa"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em João Pessoa — cada projeto pensado para valorizar empresas, comércio e instituições da capital paraibana.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em João Pessoa",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade das empresas em João Pessoa."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em João Pessoa",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade da capital.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados ao comércio e serviços locais.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em João Pessoa",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de João Pessoa, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em João Pessoa?"
+    }
+  },
+  {
+    "slug": "campina-grande-pb",
+    "name": "Campina Grande",
+    "state": "PB",
+    "seoTitle": "Criação de Sites e Sistemas em Campina Grande - PB",
+    "seoDescription": "Desenvolvimento de sites e sistemas em Campina Grande para empresas B2B, startups e prestadores de serviço que buscam soluções digitais mais robustas, escaláveis e otimizadas.",
+    "keywords": [
+      "criação de sites em Campina Grande",
+      "desenvolvimento web Campina Grande",
+      "sistemas web Campina Grande",
+      "sites profissionais Campina Grande",
+      "SEO Campina Grande"
+    ],
+    "sections": {
+      "portfolio": "Confira os sites e sistemas que desenvolvemos em Campina Grande — soluções digitais robustas e escaláveis para empresas B2B e startups locais.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Campina Grande",
+        "exclusividade": "Sites e sistemas totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem soluções rápidas, escaláveis e confiáveis.",
+        "liberdade": "Liberdade total para evoluir sistemas e sites conforme a necessidade do seu negócio regional."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Campina Grande",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados ao mercado local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às empresas de Campina Grande.",
+        "desenvolvimento": "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Campina Grande",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas e startups de Campina Grande, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Campina Grande?"
+    }
+  },
+  {
+    "slug": "teresina-pi",
+    "name": "Teresina",
+    "state": "PI",
+    "seoTitle": "Criação de Sites e Sistemas em Teresina - PI",
+    "seoDescription": "Criação de sites e desenvolvimento de sistemas em Teresina para empresas, clínicas, escolas, construtoras e órgãos públicos que buscam presença digital profissional, performance e crescimento.",
+    "keywords": [
+      "criação de sites em Teresina",
+      "desenvolvimento web Teresina",
+      "sistemas web Teresina",
+      "agência digital Teresina",
+      "SEO Teresina"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites e sistemas que desenvolvemos em Teresina — soluções criadas para empresas, escolas, clínicas e órgãos públicos.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Teresina",
+        "exclusividade": "Sites e sistemas totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem soluções rápidas e escaláveis.",
+        "liberdade": "Liberdade total para evoluir seu site ou sistema conforme a necessidade da empresa em Teresina."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Teresina",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às empresas de Teresina.",
+        "desenvolvimento": "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Teresina",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Teresina, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Teresina?"
+    }
+  },
+  {
+    "slug": "parnaiba-pi",
+    "name": "Parnaíba",
+    "state": "PI",
+    "seoTitle": "Criação de Sites Profissionais em Parnaíba - PI",
+    "seoDescription": "Desenvolvimento de sites em Parnaíba para empresas de comércio, serviços e turismo que desejam fortalecer sua presença online e atrair mais clientes locais.",
+    "keywords": [
+      "criação de sites em Parnaíba",
+      "desenvolvimento web Parnaíba",
+      "sites profissionais Parnaíba",
+      "SEO Parnaíba"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Parnaíba — projetos criados para valorizar empresas de comércio, serviços e turismo local.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Parnaíba",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade das empresas em Parnaíba."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Parnaíba",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às empresas de Parnaíba.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Parnaíba",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Parnaíba, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Parnaíba?"
+    }
+  },
+  {
+    "slug": "natal-rn",
+    "name": "Natal",
+    "state": "RN",
+    "seoTitle": "Criação de Sites Profissionais em Natal - RN",
+    "seoDescription": "Criação de sites, sistemas e soluções digitais em Natal para empresas, comércios, serviços, turismo e setor público que buscam presença online profissional, performance e resultados no Google.",
+    "keywords": [
+      "criação de sites em Natal",
+      "desenvolvimento web Natal",
+      "agência digital Natal",
+      "sites profissionais Natal",
+      "SEO Natal"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites que desenvolvemos em Natal — soluções digitais criadas para empresas, comércio e turismo local.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Natal",
+        "exclusividade": "Sites e sistemas totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem soluções rápidas, escaláveis e confiáveis.",
+        "liberdade": "Liberdade total para evoluir sites e sistemas conforme a necessidade das empresas em Natal."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Natal",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade da cidade.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados ao comércio, serviços e turismo local.",
+        "desenvolvimento": "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Natal",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Natal, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Natal?"
+    }
+  },
+  {
+    "slug": "mossoro-rn",
+    "name": "Mossoró",
+    "state": "RN",
+    "seoTitle": "Criação de Sites para Empresas em Mossoró - RN",
+    "seoDescription": "Desenvolvimento de sites em Mossoró para empresas do comércio, serviços, petróleo, agronegócio e educação que desejam ampliar sua presença digital e gerar mais clientes locais.",
+    "keywords": [
+      "criação de sites em Mossoró",
+      "desenvolvimento web Mossoró",
+      "sites profissionais Mossoró",
+      "SEO Mossoró"
+    ],
+    "sections": {
+      "portfolio": "Confira os sites que desenvolvemos em Mossoró — soluções pensadas para comércio, serviços, agronegócio e educação local.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Mossoró",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade das empresas em Mossoró."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Mossoró",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às empresas de Mossoró.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Mossoró",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Mossoró, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Mossoró?"
+    }
+  },
+  {
+    "slug": "aracaju-se",
+    "name": "Aracaju",
+    "state": "SE",
+    "seoTitle": "Criação de Sites Profissionais em Aracaju - SE",
+    "seoDescription": "Criação de sites, sistemas e soluções digitais em Aracaju para empresas, comércios, serviços, turismo e setor público que buscam presença online profissional, performance e resultados no Google.",
+    "keywords": [
+      "criação de sites em Aracaju",
+      "desenvolvimento web Aracaju",
+      "agência digital Aracaju",
+      "sites profissionais Aracaju",
+      "SEO Aracaju"
+    ],
+    "sections": {
+      "portfolio": "Veja os sites e sistemas que desenvolvemos em Aracaju — soluções digitais criadas para empresas, comércio e serviços da capital sergipana.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Aracaju",
+        "exclusividade": "Sites e sistemas totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem soluções rápidas, escaláveis e confiáveis.",
+        "liberdade": "Liberdade total para evoluir sites e sistemas conforme a necessidade das empresas em Aracaju."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Aracaju",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às empresas de Aracaju.",
+        "desenvolvimento": "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Aracaju",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Aracaju, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Aracaju?"
+    }
+  },
+  {
+    "slug": "nossa-senhora-do-socorro-se",
+    "name": "Nossa Senhora do Socorro",
+    "state": "SE",
+    "seoTitle": "Criação de Sites para Empresas em Nossa Senhora do Socorro - SE",
+    "seoDescription": "Desenvolvimento de sites em Nossa Senhora do Socorro para pequenas e médias empresas que buscam fortalecer sua presença digital, com suporte e serviços concentrados na capital Aracaju.",
+    "keywords": [
+      "criação de sites em Nossa Senhora do Socorro",
+      "desenvolvimento web Nossa Senhora do Socorro",
+      "sites para empresas locais",
+      "SEO Nossa Senhora do Socorro"
+    ],
+    "sections": {
+      "portfolio": "Confira os sites que desenvolvemos em Nossa Senhora do Socorro — projetos pensados para fortalecer pequenas e médias empresas locais.",
+      "desenvolvimento": {
+        "title": "Desenvolvimento sob medida em Nossa Senhora do Socorro",
+        "exclusividade": "Sites totalmente personalizados, refletindo a identidade de cada negócio local.",
+        "performance": "Código otimizado e tecnologias modernas garantem sites rápidos e escaláveis.",
+        "liberdade": "Liberdade total para evoluir o site conforme a necessidade das empresas locais."
+      },
+      "processo": {
+        "title": "Um processo simples para empresas em Nossa Senhora do Socorro",
+        "formulario": "Envie suas ideias e necessidades rapidamente via formulário online.",
+        "reuniao": "Alinhamento para definir objetivos e direcionamentos adaptados à realidade local.",
+        "proposta": "Escopo, prazo e investimento claros, adaptados às pequenas e médias empresas.",
+        "desenvolvimento": "Construção do site com ajustes contínuos, garantindo presença digital profissional."
+      },
+      "equipe": {
+        "title": "Conheça nosso time em Nossa Senhora do Socorro",
+        "nome": "Alessandro Gomes - Desenvolvedor Web",
+        "descricao": "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas locais, com foco em performance e experiência do usuário."
+      },
+      "cta": "Pronto para dar o próximo passo em Nossa Senhora do Socorro?"
+    }
+  }
+]

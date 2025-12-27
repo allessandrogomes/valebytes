@@ -1,12 +1,13 @@
-import { writeFileSync } from "fs"
+import { readFileSync, writeFileSync } from "fs";
+import { resolve } from "path";
 
-const BASE_URL = "https://valebytes.com.br"
+const citiesPath = resolve("src/cities.json");
+const cities = JSON.parse(readFileSync(citiesPath, "utf-8"));
 
-const urls = [
-  `${BASE_URL}/`,
-  `${BASE_URL}/criacao-de-sites-em-juazeiro-ba/`,
-  `${BASE_URL}/criacao-de-sites-em-petrolina-pe/`
-]
+const BASE_URL = "https://valebytes.com.br";
+
+let urls = cities.map((c) => `${BASE_URL}/criacao-de-sites/${c.slug}`);
+urls.push(`${BASE_URL}/`);
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -23,6 +24,6 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     .join("")}
 </urlset>`;
 
-writeFileSync("dist/sitemap.xml", sitemap);
+writeFileSync("out/sitemap.xml", sitemap);
 
 console.log("✅ Sitemap gerado com sucesso: public/sitemap.xml");
