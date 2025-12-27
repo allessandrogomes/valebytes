@@ -1,32 +1,47 @@
-import Script from "next/script"
-import "./globals.css"
-import { Header } from "@/components/Header"
-import { Footer } from "@/components/Footer"
+import "@fontsource/poppins";
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/800.css";
+import "@fontsource/poppins/900.css";
+import Script from "next/script";
+import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode;
 }) {
-    return (
-        <html lang="pt-BR">
-            <head>
-                <link rel="image_src" href="https://valebytes.com.br/images/medium-logo.webp" />
-                <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-T1T72L0SFT" />
-                <Script id="google-analytics" strategy="afterInteractive">
-                    {`
+  return (
+    <html lang="pt-BR">
+      <head>
+        <link
+          rel="image_src"
+          href="https://valebytes.com.br/images/medium-logo.webp"
+        />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-T1T72L0SFT"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', 'G-T1T72L0SFT');
                     `}
-                </Script>
-            </head>
-            <body>
-                <Header />
-                <main>{children}</main>
-                <Footer />
-            </body>
-        </html>
-    )
+        </Script>
+      </head>
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
 }
