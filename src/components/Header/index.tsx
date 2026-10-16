@@ -1,264 +1,197 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
-import { useState, useEffect } from "react";
+import { useLenis } from "lenis/react";
+import { AnimatePresence, motion } from "motion/react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+import { CITIES_HUB_PATH, NAV_LINKS, SECTION_IDS } from "@/lib/site";
+import { buttonVariants } from "../ui/Button";
+import { DiamondMark } from "../ui/DiamondMark";
+import { EASE_OUT_SOFT } from "../motion/Reveal";
+import { useActiveSection } from "./useActiveSection";
+
+const SCROLLED_THRESHOLD_PX = 12;
+const CITY_PAGE_PATTERN = new RegExp(`^${CITIES_HUB_PATH}[^/]+/?$`);
+
+function isLandingPage(pathname: string): boolean {
+  return pathname === "/" || CITY_PAGE_PATTERN.test(pathname);
+}
 
 export function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>("inicio");
+  const [isScrolled, setIsScrolled] = useState(false);
+  const activeSection = useActiveSection();
+  const lenis = useLenis();
 
-  const [hideHeader, setHideHeader] = useState(false);
+  const sectionHrefPrefix = isLandingPage(pathname) ? "" : "/";
+  const sectionHref = (sectionId: string) =>
+    `${sectionHrefPrefix}#${sectionId}`;
 
   useEffect(() => {
-    const notFoundElement = document.getElementById("not-found");
-    setHideHeader(!!notFoundElement);
+    const updateScrolledState = () =>
+      setIsScrolled(window.scrollY > SCROLLED_THRESHOLD_PX);
+
+    updateScrolledState();
+    window.addEventListener("scroll", updateScrolledState, { passive: true });
+
+    return () => window.removeEventListener("scroll", updateScrolledState);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
+
+    if (isMenuOpen) {
+      lenis?.stop();
+      return;
+    }
+
+    lenis?.start();
+  }, [isMenuOpen, lenis]);
 
   const closeMenu = () => {
+    lenis?.start();
     setIsMenuOpen(false);
   };
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerHeight = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-    closeMenu();
-  };
-
-  useEffect(() => {
-    const sections = [
-      "inicio",
-      "portfolio",
-      "diferenciais",
-      "como-funciona",
-      "desenvolvedor",
-      "contato",
-    ];
-
-    const observerOptions = {
-      root: null,
-      rootMargin: "-20% 0px -60% 0px",
-      threshold: 0,
-    };
-
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
-
-    sections.forEach((sectionId) => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        observer.observe(section);
-      }
-    });
-
-    return () => {
-      sections.forEach((sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          observer.unobserve(section);
-        }
-      });
-    };
-  }, []);
-
   return (
     <>
-      <header className="fixed z-99 w-full bg-[#EEEEEE] flex justify-between items-center h-20 px-10 md:px-20">
-        {/* Logo */}
-        <span className="uppercase font-bold text-xl">ValeBytes</span>
-
-        {!hideHeader && (
-          <>
-            <nav className="hidden lg:block">
-              <ul className="flex gap-6 xl:gap-8 font-medium">
-                <li
-                  onClick={() => scrollToSection("inicio")}
-                  className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
-                    activeSection === "inicio"
-                      ? "border-[#3A5DFF]"
-                      : "border-transparent"
-                  }`}
-                >
-                  Início
-                </li>
-                <li
-                  onClick={() => scrollToSection("portfolio")}
-                  className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
-                    activeSection === "portfolio"
-                      ? "border-[#3A5DFF]"
-                      : "border-transparent"
-                  }`}
-                >
-                  Portfólio
-                </li>
-                <li
-                  onClick={() => scrollToSection("diferenciais")}
-                  className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
-                    activeSection === "diferenciais"
-                      ? "border-[#3A5DFF]"
-                      : "border-transparent"
-                  }`}
-                >
-                  Diferenciais
-                </li>
-                <li
-                  onClick={() => scrollToSection("como-funciona")}
-                  className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
-                    activeSection === "como-funciona"
-                      ? "border-[#3A5DFF]"
-                      : "border-transparent"
-                  }`}
-                >
-                  Como funciona
-                </li>
-                <li
-                  onClick={() => scrollToSection("desenvolvedor")}
-                  className={`cursor-pointer border-b-2 transition-all duration-300 hover:border-[#3A5DFF] ${
-                    activeSection === "desenvolvedor"
-                      ? "border-[#3A5DFF]"
-                      : "border-transparent"
-                  }`}
-                >
-                  Nosso time
-                </li>
-              </ul>
-            </nav>
-
-            {/* Botão Desktop */}
-            <button
-              onClick={() => scrollToSection("contato")}
-              className="hidden lg:block bg-[#3A5DFF] text-[#EEEEEE] cursor-pointer p-2 rounded-lg transition-all duration-300 hover:bg-[#3a5effe1]"
-            >
-              Solicitar orçamento
-            </button>
-
-            {/* Menu Hamburguer Mobile */}
-            <button
-              className="lg:hidden flex flex-col justify-center items-center w-6 h-6 cursor-pointer"
-              onClick={toggleMenu}
-            >
-              <span
-                className={`bg-black h-0.5 w-6 rounded-full transition-all duration-300 ${
-                  isMenuOpen ? "rotate-45 translate-y-2" : ""
-                }`}
-              ></span>
-              <span
-                className={`bg-black h-0.5 w-6 rounded-full my-1.5 transition-all duration-300 ${
-                  isMenuOpen ? "opacity-0" : ""
-                }`}
-              ></span>
-              <span
-                className={`bg-black h-0.5 w-6 rounded-full transition-all duration-300 ${
-                  isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                }`}
-              ></span>
-            </button>
-          </>
+      <header
+        className={cn(
+          "fixed inset-x-0 top-0 z-50 h-[var(--header-height)] border-b-2 bg-paper/90 backdrop-blur-md transition-colors duration-300",
+          isScrolled || isMenuOpen ? "border-ink" : "border-transparent",
         )}
-        {/* Menu Desktop */}
-      </header>
-
-      {/* Menu Mobile */}
-      <div
-        className={`lg:hidden fixed pb-8 top-20 left-0 w-full bg-[#EEEEEE] shadow-lg transition-all duration-300 z-50 ${
-          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
       >
-        <nav className="p-6">
-          <ul className="flex flex-col gap-6 font-medium">
-            <li
-              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
-                activeSection === "inicio"
-                  ? "text-[#3A5DFF] border-[#3A5DFF]"
-                  : "border-gray-100"
-              }`}
-              onClick={() => scrollToSection("inicio")}
-            >
-              Início
-            </li>
-            <li
-              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
-                activeSection === "portfolio"
-                  ? "text-[#3A5DFF] border-[#3A5DFF]"
-                  : "border-gray-100"
-              }`}
-              onClick={() => scrollToSection("portfolio")}
-            >
-              Portfólio
-            </li>
-            <li
-              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
-                activeSection === "diferenciais"
-                  ? "text-[#3A5DFF] border-[#3A5DFF]"
-                  : "border-gray-100"
-              }`}
-              onClick={() => scrollToSection("diferenciais")}
-            >
-              Diferenciais
-            </li>
-            <li
-              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
-                activeSection === "como-funciona"
-                  ? "text-[#3A5DFF] border-[#3A5DFF]"
-                  : "border-gray-100"
-              }`}
-              onClick={() => scrollToSection("como-funciona")}
-            >
-              Como funciona
-            </li>
-            <li
-              className={`cursor-pointer py-2 border-b transition-all duration-300 hover:text-[#3A5DFF] hover:border-[#3A5DFF] ${
-                activeSection === "desenvolvedor"
-                  ? "text-[#3A5DFF] border-[#3A5DFF]"
-                  : "border-gray-100"
-              }`}
-              onClick={() => scrollToSection("desenvolvedor")}
-            >
-              Nosso time
-            </li>
-          </ul>
-        </nav>
-        {/* Botão Mobile */}
-        {!hideHeader && (
-          <button
-            className="ml-6 bg-[#3A5DFF] text-[#EEEEEE] cursor-pointer p-3 rounded-lg transition-all duration-300 hover:bg-[#3a5effe1]"
-            onClick={() => scrollToSection("contato")}
+        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-6 px-5 sm:px-8 lg:px-12">
+          <a
+            href={sectionHref(SECTION_IDS.HOME)}
+            className="flex items-center gap-2.5"
+            onClick={closeMenu}
+          >
+            <DiamondMark className="h-7 w-auto text-brand" />
+            <span className="font-display text-xl font-extrabold tracking-tight uppercase">
+              ValeBytes
+            </span>
+          </a>
+
+          <nav aria-label="Navegação principal" className="hidden lg:block">
+            <ul className="flex items-center gap-1">
+              {NAV_LINKS.map((link) => {
+                const isActive = activeSection === link.id;
+
+                return (
+                  <li key={link.id} className="relative">
+                    <a
+                      href={sectionHref(link.id)}
+                      aria-current={isActive ? "true" : undefined}
+                      className={cn(
+                        "relative z-10 block rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                        isActive ? "text-white" : "text-ink hover:text-brand",
+                      )}
+                    >
+                      {link.label}
+                    </a>
+                    {isActive && (
+                      <motion.span
+                        layoutId="active-nav-pill"
+                        className="absolute inset-0 rounded-md bg-ink"
+                        transition={{
+                          type: "spring",
+                          stiffness: 380,
+                          damping: 32,
+                        }}
+                      />
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+
+          <a
+            href={sectionHref(SECTION_IDS.CONTACT)}
+            className={cn(
+              buttonVariants({ size: "sm" }),
+              "hidden lg:inline-flex",
+            )}
           >
             Solicitar orçamento
-          </button>
-        )}
-      </div>
+          </a>
 
-      {/* Overlay */}
-      {isMenuOpen && (
-        <div
-          className="lg:hidden fixed inset-0 z-40 top-20 bg-black/40 backdrop-blur-xs"
-          onClick={closeMenu}
-        ></div>
-      )}
+          <button
+            type="button"
+            className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-lg border-2 border-ink bg-white shadow-hard-sm lg:hidden"
+            onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+          >
+            <span
+              className={cn(
+                "h-0.5 w-5 bg-ink transition-transform duration-300",
+                isMenuOpen && "translate-y-1 rotate-45",
+              )}
+            />
+            <span
+              className={cn(
+                "h-0.5 w-5 bg-ink transition-transform duration-300",
+                isMenuOpen && "-translate-y-1 -rotate-45",
+              )}
+            />
+          </button>
+        </div>
+      </header>
+
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            id="mobile-menu"
+            className="fixed inset-x-0 top-[var(--header-height)] bottom-0 z-40 flex flex-col justify-between overflow-y-auto bg-paper px-5 pt-8 pb-10 sm:px-8 lg:hidden"
+            initial={{ opacity: 0, y: -16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -16 }}
+            transition={{ duration: 0.35, ease: EASE_OUT_SOFT }}
+            data-lenis-prevent
+          >
+            <nav aria-label="Navegação mobile">
+              <ul className="flex flex-col">
+                {NAV_LINKS.map((link, index) => (
+                  <motion.li
+                    key={link.id}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      delay: 0.05 * index,
+                      duration: 0.4,
+                      ease: EASE_OUT_SOFT,
+                    }}
+                    className="border-b-2 border-ink"
+                  >
+                    <a
+                      href={sectionHref(link.id)}
+                      onClick={closeMenu}
+                      className="flex items-baseline justify-between py-4 font-display text-4xl font-extrabold tracking-tight"
+                    >
+                      {link.label}
+                      <span className="font-mono text-sm font-medium text-brand">
+                        0{index + 1}
+                      </span>
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </nav>
+            <a
+              href={sectionHref(SECTION_IDS.CONTACT)}
+              onClick={closeMenu}
+              className={cn(buttonVariants({ size: "lg" }), "mt-10 w-full")}
+            >
+              Solicitar orçamento
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

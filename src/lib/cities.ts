@@ -32,7 +32,7 @@ export const cities: City[] = [
       },
 
       equipe: {
-        title: "Conheça nosso time em Maceió",
+        title: "Quem cria seu site em Maceió",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em criar soluções personalizadas para empresas em Maceió. Transformo ideias em realidade digital com foco em performance e experiência do usuário.",
@@ -81,7 +81,7 @@ export const cities: City[] = [
       },
 
       equipe: {
-        title: "Conheça nosso time em Arapiraca",
+        title: "Quem cria seu site em Arapiraca",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções personalizadas para empresas do Agreste alagoano. Transformo ideias em realidade digital com foco em performance e experiência do usuário.",
@@ -139,7 +139,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo resultados e presença digital de destaque.",
       },
       equipe: {
-        title: "Conheça nosso time em Salvador",
+        title: "Quem cria seu site em Salvador",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em criar soluções digitais modernas e personalizadas para empresas de Salvador, com foco em performance e experiência do usuário.",
@@ -184,7 +184,7 @@ export const cities: City[] = [
           "Construção do site com ajustes durante todo o processo, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Feira de Santana",
+        title: "Quem cria seu site em Feira de Santana",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções personalizadas para empresas de Feira de Santana, com foco em performance e experiência do usuário.",
@@ -229,7 +229,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital sólida na cidade.",
       },
       equipe: {
-        title: "Conheça nosso time em Vitória da Conquista",
+        title: "Quem cria seu site em Vitória da Conquista",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em criar soluções digitais para empresas do sudoeste da Bahia, com foco em performance e experiência do usuário.",
@@ -274,7 +274,7 @@ export const cities: City[] = [
           "Construção do site com ajustes durante o processo, garantindo resultados profissionais.",
       },
       equipe: {
-        title: "Conheça nosso time em Camaçari",
+        title: "Quem cria seu site em Camaçari",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas industriais e comerciais de Camaçari, com foco em performance e experiência do usuário.",
@@ -319,7 +319,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital sólida.",
       },
       equipe: {
-        title: "Conheça nosso time em Lauro de Freitas",
+        title: "Quem cria seu site em Lauro de Freitas",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em criar soluções digitais para empresas e profissionais de Lauro de Freitas, com foco em performance e experiência do usuário.",
@@ -364,7 +364,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Juazeiro",
+        title: "Quem cria seu site em Juazeiro",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Juazeiro e região, com foco em performance e experiência do usuário.",
@@ -411,7 +411,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Fortaleza",
+        title: "Quem cria seu site em Fortaleza",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Fortaleza e região, com foco em performance e experiência do usuário.",
@@ -456,7 +456,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Caucaia",
+        title: "Quem cria seu site em Caucaia",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Caucaia e região, com foco em performance e experiência do usuário.",
@@ -501,7 +501,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Juazeiro do Norte",
+        title: "Quem cria seu site em Juazeiro do Norte",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas do Cariri, com foco em performance e experiência do usuário.",
@@ -549,7 +549,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em São Luís",
+        title: "Quem cria seu site em São Luís",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de São Luís, com foco em performance e experiência do usuário.",
@@ -594,7 +594,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Imperatriz",
+        title: "Quem cria seu site em Imperatriz",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Imperatriz, com foco em performance e experiência do usuário.",
@@ -642,7 +642,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em João Pessoa",
+        title: "Quem cria seu site em João Pessoa",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de João Pessoa, com foco em performance e experiência do usuário.",
@@ -688,7 +688,7 @@ export const cities: City[] = [
           "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Campina Grande",
+        title: "Quem cria seu site em Campina Grande",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas e startups de Campina Grande, com foco em performance e experiência do usuário.",
@@ -736,7 +736,7 @@ export const cities: City[] = [
           "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Teresina",
+        title: "Quem cria seu site em Teresina",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Teresina, com foco em performance e experiência do usuário.",
@@ -781,7 +781,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Parnaíba",
+        title: "Quem cria seu site em Parnaíba",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Parnaíba, com foco em performance e experiência do usuário.",
@@ -829,7 +829,7 @@ export const cities: City[] = [
           "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Natal",
+        title: "Quem cria seu site em Natal",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Natal, com foco em performance e experiência do usuário.",
@@ -874,7 +874,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Mossoró",
+        title: "Quem cria seu site em Mossoró",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Mossoró, com foco em performance e experiência do usuário.",
@@ -922,7 +922,7 @@ export const cities: City[] = [
           "Construção de sites e sistemas com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Aracaju",
+        title: "Quem cria seu site em Aracaju",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas de Aracaju, com foco em performance e experiência do usuário.",
@@ -967,7 +967,7 @@ export const cities: City[] = [
           "Construção do site com ajustes contínuos, garantindo presença digital profissional.",
       },
       equipe: {
-        title: "Conheça nosso time em Nossa Senhora do Socorro",
+        title: "Quem cria seu site em Nossa Senhora do Socorro",
         nome: "Alessandro Gomes - Desenvolvedor Web",
         descricao:
           "Desenvolvedor Web Full Stack especializado em soluções digitais para empresas locais, com foco em performance e experiência do usuário.",

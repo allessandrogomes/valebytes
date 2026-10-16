@@ -1,30 +1,126 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand: #3a5dff;
+  --color-brand-600: #2443d9;
+  --color-brand-100: #e3e8ff;
+  --color-paper: #f5f5f0;
+  --color-ink: #0e1024;
+  --color-ink-soft: #3d4060;
+  --color-accent: #ffd43b;
+
+  --font-display: var(--font-bricolage), "Arial Black", sans-serif;
+  --font-sans: var(--font-geist), Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --shadow-hard-sm: 3px 3px 0 var(--color-ink);
+  --shadow-hard: 5px 5px 0 var(--color-ink);
+  --shadow-hard-lg: 8px 8px 0 var(--color-ink);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
 :root {
-  --background: #EEEEEE;
-  --foreground: #3a5dff;
+  color-scheme: light;
+  --header-height: 76px;
+}
+
+html {
+  scroll-padding-top: var(--header-height);
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Poppins, Helvetica, Arial, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  text-decoration: none;
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 3px;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(14 16 36 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(14 16 36 / 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.text-outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px currentColor;
+  transition: -webkit-text-fill-color 0.3s ease;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
+/* Lenis recomenda estas regras para não brigar com o scroll nativo */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+details.faq-item::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition:
+    block-size 0.4s var(--ease-out-soft),
+    content-visibility 0.4s allow-discrete;
+}
+
+details.faq-item[open]::details-content {
+  block-size: auto;
+}

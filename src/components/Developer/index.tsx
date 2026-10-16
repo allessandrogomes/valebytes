@@ -1,64 +1,102 @@
-/* eslint-disable @next/next/no-img-element */
-import { HeaderSection } from "../HeaderSection";
-import { SectionLayout } from "../SectionLayout";
+import Image from "next/image";
 import { Linkedin } from "lucide-react";
+import { Sections } from "@/types/City";
+import { LINKEDIN_URL, SECTION_IDS } from "@/lib/site";
+import { buttonVariants } from "../ui/Button";
+import { Container } from "../ui/Container";
+import { SectionHeading } from "../ui/SectionHeading";
+import { Reveal } from "../motion/Reveal";
 
-interface IDeveloper {
-  data?: {
-    title: string;
-    nome: string;
-    descricao: string;
-  };
+const DEFAULT_CONTENT: Sections["equipe"] = {
+  title: "Quem está por trás",
+  nome: "Alessandro Gomes",
+  descricao:
+    "Desenvolvedor web full stack especializado em criar soluções personalizadas e modernas para empresas. Com foco em qualidade, performance e experiência do usuário, transformo ideias em realidade digital com código limpo e tecnologias atuais.",
+};
+
+const TECH_STACK = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "SEO técnico",
+];
+const DEVELOPER_ROLE_SUFFIX = " - Desenvolvedor Web";
+
+interface DeveloperProps {
+  index: string;
+  content?: Sections["equipe"];
 }
 
-export function Developer({ data }: IDeveloper) {
-  return (
-    <SectionLayout id="desenvolvedor">
-      <HeaderSection
-        title="Conheça nosso time"
-        subtitle={
-          data
-            ? data.title
-            : "Por trás de cada projeto, há um desenvolvedor dedicado a transformar suas ideias em realidade digital"
-        }
-      />
+export function Developer({
+  index,
+  content = DEFAULT_CONTENT,
+}: DeveloperProps) {
+  const developerName = content.nome.replace(DEVELOPER_ROLE_SUFFIX, "");
 
-      <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 mt-8 md:mt-12">
-        {/* Foto do desenvolvedor */}
-        <div className="flex-shrink-0">
-          <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#3A5DFF] shadow-lg">
-            <img
-              src="/alessandro.jpg"
-              alt={`${data ? data.nome : "Alessandro Gomes"} - Desenvolvedor Web`}
-              className="w-full h-full object-contain scale-111"
+  return (
+    <section id={SECTION_IDS.DEVELOPER} className="py-20 sm:py-28">
+      <Container className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+        <Reveal className="relative mx-auto w-full max-w-sm lg:max-w-none">
+          <div
+            className="absolute inset-0 translate-x-4 translate-y-4 rounded-2xl border-2 border-ink bg-brand"
+            aria-hidden="true"
+          />
+          <div className="relative overflow-hidden rounded-2xl border-2 border-ink bg-white">
+            <Image
+              src="/alessandro.webp"
+              alt={`${developerName}, desenvolvedor web da ValeBytes`}
+              width={800}
+              height={725}
+              sizes="(min-width: 1024px) 480px, 90vw"
+              className="aspect-[4/4.2] h-auto w-full object-cover object-top grayscale-[15%] transition duration-500 hover:grayscale-0"
             />
           </div>
-        </div>
+          <span className="absolute -bottom-5 left-6 rounded-md border-2 border-ink bg-accent px-3 py-1.5 font-mono text-xs font-medium shadow-hard-sm sm:text-sm">
+            dev full stack
+          </span>
+        </Reveal>
 
-        {/* Informações */}
-        <div className="flex-1 text-center lg:text-left">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-2">
-            {data ? data.nome : "Alessandro Gomes"}
-          </h3>
-          <p className="text-lg sm:text-xl text-[#3A5DFF] font-semibold mb-4 md:mb-6">
-            Desenvolvedor Web Full Stack
-          </p>
-          <p className="text-sm sm:text-base text-black opacity-90 mb-6 leading-relaxed">
-            {data
-              ? data.descricao
-              : "Desenvolvedor web experiente especializado em criar soluções personalizadas e modernas para empresas. Com foco em qualidade, performance e experiência do usuário, transformo ideias em realidade digital através de código limpo e tecnologias atuais."}
-          </p>
-          <a
-            href="https://linkedin.com/in/allessandrogomes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#3A5DFF] text-[#EEEEEE] px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-[#3a5effe1] transition-all duration-300"
-          >
-            <Linkedin size={18} className="sm:w-5 sm:h-5" />
-            Ver perfil no LinkedIn
-          </a>
+        <div className="flex flex-col gap-8">
+          <SectionHeading
+            index={index}
+            eyebrow="Quem faz"
+            title={content.title}
+          />
+          <Reveal className="flex flex-col gap-6">
+            <div>
+              <p className="font-display text-3xl font-extrabold tracking-tight">
+                {developerName}
+              </p>
+              <p className="font-mono text-sm font-medium tracking-wider text-brand uppercase">
+                Desenvolvedor Web Full Stack
+              </p>
+            </div>
+            <p className="max-w-xl text-lg leading-relaxed text-ink-soft">
+              {content.descricao}
+            </p>
+            <ul className="flex flex-wrap gap-2" aria-label="Tecnologias">
+              {TECH_STACK.map((tech) => (
+                <li
+                  key={tech}
+                  className="rounded-md border-2 border-ink bg-white px-3 py-1 font-mono text-xs font-medium"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={buttonVariants({ variant: "ink", className: "w-fit" })}
+            >
+              <Linkedin className="h-5 w-5" aria-hidden="true" />
+              Ver perfil no LinkedIn
+            </a>
+          </Reveal>
         </div>
-      </div>
-    </SectionLayout>
+      </Container>
+    </section>
   );
 }

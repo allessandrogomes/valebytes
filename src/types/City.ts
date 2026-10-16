@@ -1,3 +1,8 @@
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
 export type Sections = {
   portfolio: string;
 
@@ -33,4 +38,6 @@ export type City = {
   seoDescription: string;
   keywords: string[];
   sections: Sections;
+  intro?: string;
+  faq?: FaqItem[];
 };

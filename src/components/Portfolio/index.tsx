@@ -1,77 +1,34 @@
-"use client";
+import { portfolioProjects } from "@/data/portfolio";
+import { SECTION_IDS } from "@/lib/site";
+import { Container } from "../ui/Container";
+import { SectionHeading } from "../ui/SectionHeading";
+import { RevealGroup } from "../motion/Reveal";
+import { PortfolioCard } from "./PortfolioCard";
 
-import { HeaderSection } from "../HeaderSection";
-import { SectionLayout } from "../SectionLayout";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Virtual } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/effect-fade";
-import { IImage } from "./Image";
-import { Slide } from "./Slide";
+const DEFAULT_DESCRIPTION =
+  "Uma seleção dos sites que desenvolvemos do zero — cada um com identidade própria, criado para destacar o que torna cada negócio único.";
 
-const websites: IImage[] = [
-  {
-    src: "/portfolio/neto-baterias.png",
-    alt: "Neto Baterias Website",
-    title: "Neto Baterias Website",
-    href: "https://netobaterias.com.br",
-  },
-  {
-    src: "/portfolio/sol-renova.png",
-    alt: "Sol Renova Website",
-    title: "Sol Renova Website",
-    href: "https://solrenova.vercel.app",
-  },
-  {
-    src: "/portfolio/psico.png",
-    alt: "Psicóloga Website",
-    title: "Psicóloga Website",
-    href: "https://psichoana.vercel.app/",
-  },
-  {
-    src: "/portfolio/raylaw.png",
-    alt: "Advocacia Website",
-    title: "Advocacia Website",
-    href: "https://raylaw.vercel.app/",
-  },
-];
-
-interface IPortfolio {
-  data?: string;
+interface PortfolioProps {
+  index: string;
+  description?: string;
 }
 
-export function Portfolio({ data }: IPortfolio) {
+export function Portfolio({ index, description }: PortfolioProps) {
   return (
-    <SectionLayout id="portfolio" className="mt-20">
-      <HeaderSection
-        title="Portfólio"
-        subtitle={
-          data
-            ? data
-            : "Uma seleção dos sites que desenvolvemos do zero — cada um com identidade própria, criado para destacar o que torna cada negócio único"
-        }
-      />
-
-      <div>
-        <Swiper
-          modules={[Autoplay, EffectFade, Virtual]}
-          allowTouchMove={false}
-          centeredSlides
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
-          effect="fade"
-          fadeEffect={{ crossFade: true }}
-          slidesPerView={1}
-          preventClicks={false}
-          preventClicksPropagation={false}
-        >
-          {websites.map((item, index) => (
-            <SwiperSlide key={item.alt} virtualIndex={index}>
-              <Slide item={item} />
-            </SwiperSlide>
+    <section id={SECTION_IDS.PORTFOLIO} className="py-20 sm:py-28">
+      <Container className="flex flex-col gap-12 sm:gap-16">
+        <SectionHeading
+          index={index}
+          eyebrow="Portfólio"
+          title="Projetos que saíram do papel"
+          description={description ?? DEFAULT_DESCRIPTION}
+        />
+        <RevealGroup className="grid gap-8 md:grid-cols-2 lg:gap-10">
+          {portfolioProjects.map((project, index) => (
+            <PortfolioCard key={project.url} project={project} index={index} />
           ))}
-        </Swiper>
-      </div>
-    </SectionLayout>
+        </RevealGroup>
+      </Container>
+    </section>
   );
 }

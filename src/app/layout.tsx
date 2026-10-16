@@ -1,52 +1,60 @@
-import "@fontsource/poppins";
-import "@fontsource/poppins/200.css";
-import "@fontsource/poppins/300.css";
-import "@fontsource/poppins/400.css";
-import "@fontsource/poppins/500.css";
-import "@fontsource/poppins/600.css";
-import "@fontsource/poppins/700.css";
-import "@fontsource/poppins/800.css";
-import "@fontsource/poppins/900.css";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Metadata, Viewport } from "next";
+import { Bricolage_Grotesque, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Metadata } from "next";
+import { SmoothScroll } from "@/components/motion/SmoothScroll";
+import {
+  GOOGLE_ANALYTICS_ID,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/lib/site";
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  weight: ["700", "800"],
+  variable: "--font-bricolage",
+  display: "swap",
+});
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist",
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-geist-mono",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#3a5dff",
+};
 
 export const metadata: Metadata = {
-  title: "Criação de Sites Profissionais para Sua Empresa - ValeBytes",
-  description:
-    "A ValeBytes cria sites profissionais, modernos, responsivos e otimizados para destacar sua empresa e atrair mais clientes.",
-  authors: [{ name: "ValeBytes", url: "https://valebytes.com.br/" }],
-  publisher: "ValeBytes",
-  alternates: {
-    canonical: "https://valebytes.com.br/",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_TITLE} | ${SITE_NAME}`,
+    template: `%s | ${SITE_NAME}`,
   },
-  keywords: [
-    "Criação de sites",
-    "Criação de sites profissionais",
-    "Desenvolvimento de sites",
-    "Empresa criação de sites",
-    "Criar site",
-    "Agência web",
-    "Sites personalizados",
-    "Soluções web",
-    "Landing pages",
-    "Desenvolvimento web",
-    "sites para pequenos negócios",
-    "agência de sites",
-    "site profissional para empresas",
-    "desenvolvimento de sites",
-    "criação de website",
-  ],
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: SITE_NAME, url: `${SITE_URL}/` }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  formatDetection: { telephone: false },
   robots: {
     index: true,
     follow: true,
-    nocache: false,
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -54,29 +62,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     locale: "pt_BR",
-    siteName: "ValeBytes",
+    siteName: SITE_NAME,
     type: "website",
-    title: "Criação de Sites Profissionais para Sua Empresa - ValeBytes",
-    description:
-      "A ValeBytes cria sites profissionais, modernos, responsivos e otimizados para destacar sua empresa e atrair mais clientes.",
-    url: "https://www.valebytes.com.br",
-    images: "https://valebytes.com.br/images/opengraph-image.jpg",
-    countryName: "Brasil",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Criação de Sites Profissionais para Sua Empresa - ValeBytes",
-    description:
-      "A ValeBytes cria sites profissionais, modernos, responsivos e otimizados para destacar sua empresa e atrair mais clientes.",
-    images: "https://valebytes.com.br/images/opengraph-image.jpg",
   },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/apple-touch-icon-precomposed.png",
-    },
+  appleWebApp: {
+    title: SITE_NAME,
   },
 };
 
@@ -86,27 +79,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <head>
-        <meta name="apple-mobile-web-app-title" content="ValeBytes" />
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-T1T72L0SFT"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-T1T72L0SFT');
-                    `}
-        </Script>
-      </head>
+    <html
+      lang="pt-BR"
+      className={`${bricolage.variable} ${geist.variable} ${geistMono.variable}`}
+    >
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        {/* Sem JS, as animações de entrada não rodam; isto garante que o conteúdo fique visível */}
+        <noscript>
+          <style>{`[style*="opacity:0"]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+        <a
+          href="#conteudo"
+          className="sr-only z-[70] rounded-md bg-ink px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+        >
+          Pular para o conteúdo
+        </a>
+        <SmoothScroll>
+          <Header />
+          <main id="conteudo">{children}</main>
+          <Footer />
+        </SmoothScroll>
       </body>
+      <GoogleAnalytics gaId={GOOGLE_ANALYTICS_ID} />
     </html>
   );
 }
